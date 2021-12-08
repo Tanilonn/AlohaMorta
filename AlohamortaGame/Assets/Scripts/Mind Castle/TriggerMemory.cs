@@ -4,12 +4,8 @@ using UnityEngine.UI;
 
 public class TriggerMemory : MonoBehaviour
 {
-    public GameObject canvas;
-    public Memory memory;
-
-    public Text title;
-    public Text text;
-    public Image image;
+    public MemoryCanvas canvas;
+    public Memory memory;  
 
 
     // Start is called before the first frame update
@@ -27,10 +23,12 @@ public class TriggerMemory : MonoBehaviour
     void OnMouseDown()
     {
         Debug.Log("Sprite Clicked");
-        canvas.SetActive(true);
+        canvas.canvas.gameObject.SetActive(true);
         transform.root.gameObject.SetActive(false);
-        title.text = memory.Title;
-        text.text = memory.Text;
-        image.sprite = memory.Image;
+        canvas.title.text = memory.Title;
+        canvas.text.text = memory.Text;
+        canvas.image.sprite = memory.Image;
+        canvas.audioPlayer.clip = memory.Sound;
+        canvas.audioPlayer.Play();
     }
 }
