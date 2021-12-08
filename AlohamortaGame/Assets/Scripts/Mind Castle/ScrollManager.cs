@@ -10,6 +10,10 @@ public class ScrollManager : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         width = spriteRenderer.sprite.bounds.size.x * transform.localScale.x;
+        if(transform.position.x == 0) 
+        {
+            Instantiate(this, new Vector2(transform.position.x + width, transform.position.y), Quaternion.identity, transform.parent);
+        }
     }
 
     private void Update()
