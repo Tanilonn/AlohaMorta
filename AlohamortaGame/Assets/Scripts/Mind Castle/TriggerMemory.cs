@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class TriggerMemory : MonoBehaviour
 {
     public MemoryCanvas canvas;
-    public Memory memory;  
-
+    public Memory memory;
+    public Texture2D cursor;
 
     // Start is called before the first frame update
     void Start()
@@ -30,5 +30,15 @@ public class TriggerMemory : MonoBehaviour
         canvas.image.sprite = memory.Image;
         canvas.audioPlayer.clip = memory.Sound;
         canvas.audioPlayer.Play();
+    }
+
+    void OnMouseEnter()
+    {
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+    }
+
+    void OnMouseExit()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 }
