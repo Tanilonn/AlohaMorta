@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mind Castle.unity
     guid: 93a3f320a44a2834ea7b99841537aef5
+  - enabled: 1
+    path: Assets/Scenes/Outside Mind Castle.unity
+    guid: 0234fb9103bfa3e45a0150a04a8e24b0
   m_configObjects: {}

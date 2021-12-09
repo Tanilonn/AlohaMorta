@@ -156,7 +156,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 490, y: 460}
+  m_SizeDelta: {x: 490, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41499831
 MonoBehaviour:
@@ -190,9 +190,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hier komt de intro tekst.Hier komt de intro tekst.Hier komt de intro tekst.Hier
-    komt de intro tekst.Hier komt de intro tekst.Hier komt de intro tekst.Hier komt
-    de intro tekst.Hier komt de intro tekst.
+  m_Text: "Beste Mr./Mevr. van Winsum,\r\n\r\nOp 3 Augustus om 15.33 hebben wij een
+    melding doorgekregen van het overlijden van N.B. van Winsum, geboren 13-10-2074
+    te Deventer, Overijssel.\r\n\r\nAllereerst gecondoleerd met het verlies.\r\n\r\nZoals
+    het protocol aangeeft, ontvangt u hierbij de gegevens van Mevr. N.B. van Winsum\u2019s
+    CHIP, om u te helpen met het organiseren van Mevr. N.B. van Winsum\u2019s begrafenis.\r\n\r\nAttentie:
+    Vanwege [reden van overlijden] is de chip beschadigd geraakt en zijn niet alle
+    gegevens betreft wensen en/of testament meer duidelijk of beschikbaar.\r\n\r\nDe
+    app naar de gegevens is inmiddels ge\xFCpload naar uw bureaublad.\r\n\r\nMocht
+    dit niet het geval zijn, neem dan zo snel mogelijk contact met ons op. Dit kan
+    door te bellen naar 0800-2563, of een mail te sturen naar dit e-mailadres.\r\n\r\nNogmaals
+    gecondoleerd.\r\n\r\nMet vriendelijke groet,\r\n\r\nMarie Bruggen\r\nSecretaris
+    Commissie van Hooggevoelige Interne Persoonsgegevens\r\nTel.: 0800-2563     Email:
+    contact@chip.nederlandseoverheid.nl"
 --- !u!222 &41499832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -380,7 +390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -150}
+  m_AnchoredPosition: {x: 0, y: -270}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496363259
@@ -654,7 +664,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 500}
+  m_SizeDelta: {x: 500, y: 650}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1819420823
 MonoBehaviour:
