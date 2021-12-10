@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class DateTimeManager : MonoBehaviour
 {
@@ -28,7 +25,6 @@ public class DateTimeManager : MonoBehaviour
         CancelInvoke();
         InvokeRepeating("AddMinute", 0f, 1f);
     }
-
 
     public void NextDay()
     {
