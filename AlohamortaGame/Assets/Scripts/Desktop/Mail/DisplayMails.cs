@@ -7,7 +7,7 @@ public class DisplayMails : MonoBehaviour
 {
     public MailManager manager;
     public Button ButtonPrefab;
-    public Text MailTextField;
+    public GameObject MailTextField;
     public Text MailCount;
     private List<Mail> Mails;
 
@@ -59,7 +59,9 @@ public class DisplayMails : MonoBehaviour
 
     void DisplaySelectedMail(Mail mail)
     {
-        MailTextField.text = mail.Text.text;
+        MailTextField.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
+        MailTextField.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
+        MailTextField.transform.Find("Text").GetComponent<Text>().text = mail.Text.text;
         mail.IsRead = true;
     }
 }
