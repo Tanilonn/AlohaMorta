@@ -16,21 +16,20 @@ public class DateTimeManager : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
-        DateTime.Day = 1;
-        DateTime.Hour = 9;
+        DesktopDateTime.Day = 1;
+        DesktopDateTime.Hour = 9;
     }
 
     private void Start()
     {
-        CancelInvoke();
         InvokeRepeating("AddMinute", 0f, 1f);
     }
 
     public void NextDay()
     {
-        DateTime.Day++;
-        DateTime.Hour = 9;
-        if(DateTime.Day >= 6)
+        DesktopDateTime.Day++;
+        DesktopDateTime.Hour = 9;
+        if(DesktopDateTime.Day >= 6)
         {
             EndGame();
         }
@@ -39,30 +38,30 @@ public class DateTimeManager : MonoBehaviour
     public void NextTimeFrame()
     {
         //morning = 9, afternoon = 15, night = 21
-        if (DateTime.Hour + 6 >= 23)
+        if (DesktopDateTime.Hour + 6 >= 23)
         {
             NextDay();
         }
         else
         {
-            DateTime.Hour += 6;
+            DesktopDateTime.Hour += 6;
         }
     }
 
     public void AddMinute()
     {
-        if(DateTime.Minute == 59)
+        if(DesktopDateTime.Minute == 59)
         {
-            DateTime.Minute = 0;
-            DateTime.Hour++;
-            if(DateTime.Hour >= 23)
+            DesktopDateTime.Minute = 0;
+            DesktopDateTime.Hour++;
+            if(DesktopDateTime.Hour >= 23)
             {
                 NextDay();
             }
         }
         else
         {
-            DateTime.Minute++;
+            DesktopDateTime.Minute++;
         }
     }
 

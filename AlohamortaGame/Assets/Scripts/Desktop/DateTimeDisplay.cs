@@ -15,17 +15,17 @@ public class DateTimeDisplay : MonoBehaviour
     public void DisplayDateTime()
     {
         string prehour = "";
-        if(DateTime.Hour < 10)
+        if(DesktopDateTime.Hour < 10)
         {
             prehour = "0";
         }
         string preminute = "";
-        if (DateTime.Minute < 10)
+        if (DesktopDateTime.Minute < 10)
         {
             preminute = "0";
         }
-        displayDateTime.text = prehour + DateTime.Hour.ToString() + ":" + preminute + DateTime.Minute.ToString() + "\n" + "0" + DateTime.Day.ToString() + "-" + DateTime.month.ToString() + "-" + DateTime.year.ToString();
-        bigDate.text = "0" +DateTime.Day.ToString() + "-" + DateTime.month.ToString() + "-" + DateTime.year.ToString();
-        bigTime.text = prehour + DateTime.Hour.ToString() + ":" + preminute + DateTime.Minute.ToString();
+        displayDateTime.text = prehour + DesktopDateTime.Hour.ToString() + ":" + preminute + DesktopDateTime.Minute.ToString() + "\n" + "0" + DesktopDateTime.Day.ToString() + "-" + DesktopDateTime.month.ToString() + "-" + DesktopDateTime.year.ToString();
+        bigDate.text = "0" +DesktopDateTime.Day.ToString() + "-" + DesktopDateTime.month.ToString() + "-" + DesktopDateTime.year.ToString();
+        bigTime.text = prehour + DesktopDateTime.Hour.ToString() + ":" + preminute + DesktopDateTime.Minute.ToString();
     }
 }

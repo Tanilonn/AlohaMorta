@@ -1,4 +1,4 @@
-﻿public static class DateTime
+﻿public static class DesktopDateTime
 {
     public static int Day { get; set; }
     public static int month = 10;
