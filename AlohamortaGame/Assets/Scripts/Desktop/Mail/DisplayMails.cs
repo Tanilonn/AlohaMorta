@@ -8,12 +8,14 @@ public class DisplayMails : MonoBehaviour
     public MailManager manager;
     public Button ButtonPrefab;
     public Text MailTextField;
+    public Text MailCount;
     private List<Mail> Mails;
 
     // Start is called before the first frame update
     void Start()
     {
         Mails = manager.LoadEmails();
+        MailCount.text = "Inbox (" + Mails.Count.ToString() + ")";
         DisplayInbox();
 
     }
@@ -25,6 +27,7 @@ public class DisplayMails : MonoBehaviour
         if (newMail.Count > 0)
         {
             Mails = manager.LoadEmails();
+            MailCount.text = "Inbox (" + Mails.Count.ToString() + ")";
             DisplayNewMails(newMail);
         }
     }
