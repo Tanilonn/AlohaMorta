@@ -45,7 +45,9 @@ public class DisplayMails : MonoBehaviour
         foreach (var mail in newMails)
         {
             var button = Instantiate(ButtonPrefab, transform);
-            button.GetComponentInChildren<Text>().text = mail.Subject;
+            button.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
+            button.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
+            button.transform.Find("Text").GetComponent<Text>().text = mail.Text.text.Replace(System.Environment.NewLine, "");
             button.onClick.AddListener(delegate { DisplaySelectedMail(mail); });
             button.transform.SetAsFirstSibling();
         }
