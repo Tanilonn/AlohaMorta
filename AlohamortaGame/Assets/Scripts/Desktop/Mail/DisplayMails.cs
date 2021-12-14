@@ -11,17 +11,28 @@ public class DisplayMails : MonoBehaviour
     public Text MailCount;
     private List<Mail> Mails;
 
+    private int lastHour;
+
     // Start is called before the first frame update
     void Start()
     {
         Mails = manager.LoadEmails();
+        GetNewEmails();
         MailCount.text = "Inbox (" + Mails.Count.ToString() + ")";
         DisplayInbox();
-
     }
 
     // Update is called once per frame
     void Update()
+    {
+        if(DesktopDateTime.Hour != lastHour)
+        {
+            lastHour = DesktopDateTime.Hour;
+            GetNewEmails();
+        }
+    }
+
+    private void GetNewEmails()
     {
         var newMail = manager.CheckNewEmails();
         if (newMail.Count > 0)
