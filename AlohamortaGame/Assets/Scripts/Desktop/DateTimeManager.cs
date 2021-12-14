@@ -29,22 +29,9 @@ public class DateTimeManager : MonoBehaviour
     {
         DesktopDateTime.Day++;
         DesktopDateTime.Hour = 9;
-        if(DesktopDateTime.Day >= 6)
+        if (DesktopDateTime.Day >= 6)
         {
             EndGame();
-        }
-    }
-
-    public void NextTimeFrame()
-    {
-        //morning = 9, afternoon = 15, night = 21
-        if (DesktopDateTime.Hour + 6 >= 23)
-        {
-            NextDay();
-        }
-        else
-        {
-            DesktopDateTime.Hour += 6;
         }
     }
 
@@ -65,7 +52,7 @@ public class DateTimeManager : MonoBehaviour
         }
     }
 
-    private void EndGame()
+    public void EndGame()
     {
         SceneChanger scene = FindObjectOfType<SceneChanger>();
         scene.ChangeScene("End");
