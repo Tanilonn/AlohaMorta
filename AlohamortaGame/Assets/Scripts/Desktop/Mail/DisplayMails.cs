@@ -7,6 +7,7 @@ public class DisplayMails : MonoBehaviour
 {
     public MailManager manager;
     public Button ButtonPrefab;
+    public Button ReplyButton;
     public GameObject MailTextField;
     public Text MailCount;
     private List<Mail> Mails;
@@ -73,6 +74,18 @@ public class DisplayMails : MonoBehaviour
         MailTextField.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
         MailTextField.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
         MailTextField.transform.Find("Text").GetComponent<Text>().text = mail.Text.text;
+        ReplyButton.onClick.RemoveAllListeners();
+        ReplyButton.onClick.AddListener(delegate { DisplayReplies(mail); });
         mail.IsRead = true;
+    }
+
+    void DisplayReplies(Mail mail)
+    {
+        foreach(var reply in manager.LoadReplies(mail))
+        {
+            var button = Instantiate(ButtonPrefab, transform);
+            button.transform.Find("Subject").GetComponent<Text>().text = reply.Subject;
+            button.onClick.AddListener(delegate { manager.SendReply(reply); });
+        }
     }
 }

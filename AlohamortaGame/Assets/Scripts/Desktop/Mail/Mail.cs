@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 [Serializable]
 public class Mail
@@ -10,5 +11,7 @@ public class Mail
     public TextAsset Text;
     public bool IsReceived;
     public bool IsRead;
+    public List<Reply> Replies;
+    public Branch RequiredBranch;
 
 }

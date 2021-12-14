@@ -31,16 +31,54 @@ public class MailManager : MonoBehaviour
             if(mail.Day <= DesktopDateTime.Day && mail.Hour <= DesktopDateTime.Hour && !mail.IsReceived)
             {
                 mail.IsReceived = true;
-                //notification
-                newMail.Add(mail);
+                if (EmailAvailable(mail))
+                {
+                    //notification
+                    newMail.Add(mail);
+                }
             }
         }
         return newMail;
     }
 
+    public bool EmailAvailable(Mail mail)
+    {
+        if (mail.RequiredBranch == Branch.none || Story.Branches.Contains(mail.RequiredBranch))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public List<Mail> LoadEmails()
     {
         return Mails.FindAll(m => m.IsReceived == true);
+    }
+
+    public List<Reply> LoadReplies(Mail mail)
+    {
+        List<Reply> availableReplies = new List<Reply>();
+        foreach (var reply in mail.Replies)
+        {
+            if(reply.RequiredNode == Branch.none)
+            {
+                availableReplies.Add(reply);
+            }
+            else if (Story.Branches.Contains(reply.RequiredNode))
+            {
+                availableReplies.Add(reply);
+            }
+        }
+        return availableReplies;
+
+    }
+
+    public void SendReply(Reply reply)
+    {
+        Story.Branches.Add(reply.ActivatesNode);
     }
 
 
