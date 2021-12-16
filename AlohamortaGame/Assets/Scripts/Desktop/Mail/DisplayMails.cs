@@ -94,7 +94,9 @@ public class DisplayMails : MonoBehaviour
         {
             var button = Instantiate(ReplyPrefab, MailTextField.transform);
             replies.Add(button);
+            button.transform.Find("Sender").GetComponent<Text>().text = "Jij";
             button.transform.Find("Subject").GetComponent<Text>().text = reply.Subject;
+            button.transform.Find("Text").GetComponent<Text>().text = reply.Text.text;
             button.onClick.AddListener(delegate { manager.SendReply(reply); });
             button.onClick.AddListener(delegate { HideReplies(replies); });
             button.transform.SetAsFirstSibling();

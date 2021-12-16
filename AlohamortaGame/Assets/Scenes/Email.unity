@@ -1605,11 +1605,11 @@ MonoBehaviour:
     IsRead: 0
     Replies:
     - Subject: Angry reply
-      Text: {fileID: 0}
+      Text: {fileID: 4900000, guid: 56652b418c1df094f88260c66c54698e, type: 3}
       RequiredNode: 0
       ActivatesNode: 1
     - Subject: Neutral reply
-      Text: {fileID: 0}
+      Text: {fileID: 4900000, guid: 6afa31c9b9251054ebbdde27f6e76fd5, type: 3}
       RequiredNode: 0
       ActivatesNode: 0
     RequiredBranch: 0
