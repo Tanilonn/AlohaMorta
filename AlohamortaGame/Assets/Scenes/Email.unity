@@ -2298,6 +2298,9 @@ MonoBehaviour:
   manager: {fileID: 810705447}
   ButtonPrefab: {fileID: 5240789007055958359, guid: 3f16f842ddd6993499d91c5048b14954,
     type: 3}
+  ReplyButton: {fileID: 533523637}
+  ReplyPrefab: {fileID: 7741006500784844677, guid: 15c45acae7c98e0409cf25c8fd5d441f,
+    type: 3}
   MailTextField: {fileID: 1481158912}
   MailCount: {fileID: 1581663751}
 --- !u!114 &1088424192
@@ -3827,7 +3830,7 @@ MonoBehaviour:
     m_Top: 20
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 10
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -3915,8 +3918,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 172713874}
   m_HandleRect: {fileID: 172713873}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 0.9999939
+  m_Size: 0.98529404
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

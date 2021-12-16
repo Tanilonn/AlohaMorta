@@ -8,11 +8,13 @@ public class DisplayMails : MonoBehaviour
     public MailManager manager;
     public Button ButtonPrefab;
     public Button ReplyButton;
+    public Button ReplyPrefab;
     public GameObject MailTextField;
     public Text MailCount;
     private List<Mail> Mails;
 
     private int lastHour;
+    private List<Button> replies;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,8 @@ public class DisplayMails : MonoBehaviour
         GetNewEmails();
         MailCount.text = "Inbox (" + Mails.Count.ToString() + ")";
         DisplayInbox();
+        replies = new List<Button>();
+        ToggleReplyButton(false);
     }
 
     // Update is called once per frame
@@ -71,6 +75,8 @@ public class DisplayMails : MonoBehaviour
 
     void DisplaySelectedMail(Mail mail)
     {
+        ToggleReplyButton(true);
+        HideReplies(replies);
         MailTextField.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
         MailTextField.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
         MailTextField.transform.Find("Text").GetComponent<Text>().text = mail.Text.text;
@@ -81,11 +87,32 @@ public class DisplayMails : MonoBehaviour
 
     void DisplayReplies(Mail mail)
     {
-        foreach(var reply in manager.LoadReplies(mail))
+        ToggleReplyButton(false);
+        replies.Clear();
+        
+        foreach (var reply in manager.LoadReplies(mail))
         {
-            var button = Instantiate(ButtonPrefab, transform);
+            var button = Instantiate(ReplyPrefab, MailTextField.transform);
+            replies.Add(button);
             button.transform.Find("Subject").GetComponent<Text>().text = reply.Subject;
             button.onClick.AddListener(delegate { manager.SendReply(reply); });
+            button.onClick.AddListener(delegate { HideReplies(replies); });
+            button.transform.SetAsFirstSibling();
         }
     }
+
+    void HideReplies(List<Button> buttons)
+    {
+        foreach (var button in buttons)
+        {
+            Destroy(button.gameObject);
+        }
+        replies.Clear();
+    }
+
+    void ToggleReplyButton(bool state)
+    {
+        ReplyButton.gameObject.SetActive(state);
+    }
+
 }
