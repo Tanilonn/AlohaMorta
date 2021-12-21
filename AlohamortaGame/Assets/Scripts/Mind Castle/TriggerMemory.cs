@@ -23,6 +23,7 @@ public class TriggerMemory : MonoBehaviour
     void OnMouseDown()
     {
         Debug.Log("Sprite Clicked");
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         canvas.canvas.gameObject.SetActive(true);
         transform.root.gameObject.SetActive(false);
         canvas.title.text = memory.Title;
