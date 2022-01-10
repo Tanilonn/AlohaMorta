@@ -4,26 +4,24 @@ using UnityEngine;
 
 public class ArtifactManager : MonoBehaviour
 {
-
-    public List<GameObject> artifacts;
     public MemoryCanvas canvas;
+    private GameManager manager;
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        foreach(var artifact in artifacts)
+        manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        
+        foreach (var artifact in manager.artifacts)
         {
-            Instantiate(artifact, transform);
-            var script = artifact.gameObject.GetComponent<TriggerMemory>();
-            script.canvas.canvas = canvas.canvas;
+            Instantiate(artifact, transform);            
         }
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

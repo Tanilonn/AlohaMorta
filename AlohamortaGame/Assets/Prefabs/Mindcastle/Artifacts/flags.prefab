@@ -517,6 +517,7 @@ MonoBehaviour:
     image: {fileID: 0}
     audioPlayer: {fileID: 0}
   memory:
+    name: flags
     Title: Verjaardag
     Text: Ze werd 7 en kreeg een "vintage" kippenvel boek. Ze was vanaf een jonge
       leeftijd al gek op lezen en verzamelen. Haar kamer was een bibliotheek van
