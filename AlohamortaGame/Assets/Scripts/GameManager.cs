@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public List<Objective> Objectives = new List<Objective>();
-    public List<GameObject> artifacts;
 
 
     private void Awake()

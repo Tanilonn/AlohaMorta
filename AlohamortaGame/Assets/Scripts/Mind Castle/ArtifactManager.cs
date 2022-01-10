@@ -5,15 +5,14 @@ using UnityEngine;
 public class ArtifactManager : MonoBehaviour
 {
     public MemoryCanvas canvas;
-    private GameManager manager;
+    public Canvas puzzleCanvas;
+    public List<GameObject> artifacts;
 
 
     // Start is called before the first frame update
     void Awake()
-    {
-        manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        
-        foreach (var artifact in manager.artifacts)
+    {        
+        foreach (var artifact in artifacts)
         {
             Instantiate(artifact, transform);            
         }

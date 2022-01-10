@@ -1908,10 +1908,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb5afaaa199a8948a0cdcb4a66dd2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Objectives: []
-  artifacts:
-  - {fileID: 8978665999003996498, guid: bf740ca098f86e74b806dad881340b64, type: 3}
-  - {fileID: 1014027067783852118, guid: c970b3b6f67cb0e4aa5ee20be470deb5, type: 3}
+  Objectives:
+  - ID: 0
+    Name: PuzzleTest
+    Description: Solve this puzzle by filling in the password "test"
+    Completed: 0
+    Hidden: 0
 --- !u!4 &990330600
 Transform:
   m_ObjectHideFlags: 0
