@@ -7,6 +7,7 @@ public class ArtifactManager : MonoBehaviour
     public MemoryCanvas canvas;
     public Canvas puzzleCanvas;
     public List<GameObject> artifacts;
+    public GameManager manager;
 
 
     // Start is called before the first frame update
@@ -15,6 +16,13 @@ public class ArtifactManager : MonoBehaviour
         foreach (var artifact in artifacts)
         {
             Instantiate(artifact, transform);            
+        }
+
+        manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        //check for first time opening
+        if (!manager.Objectives[3].Completed)
+        {
+            manager.CompleteObjective(manager.Objectives[3]);
         }
     }
 

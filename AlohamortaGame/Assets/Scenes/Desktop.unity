@@ -2120,7 +2120,7 @@ MonoBehaviour:
   - ID: 0
     Name: CD
     Description: Solve the puzzle to open the CD artifact in the mind castle.
-    Completed: 1
+    Completed: 0
     Hidden: 0
   - ID: 0
     Name: Intro
@@ -2146,7 +2146,7 @@ MonoBehaviour:
     Name: Goals
     Description: Complete your first objective
     Completed: 0
-    Hidden: 0
+    Hidden: 1
   - ID: 0
     Name: Birthday flags
     Description: Open the birthday artifact in Nora's Mind castle
@@ -2166,7 +2166,7 @@ MonoBehaviour:
     Name: Last day
     Description: Reach the last day
     Completed: 0
-    Hidden: 0
+    Hidden: 1
 --- !u!4 &990330600
 Transform:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DisplayMails : MonoBehaviour
 {
     public MailManager manager;
+    public GameManager gameManager;
     public Button ButtonPrefab;
     public Button ReplyButton;
     public Button ReplyPrefab;
@@ -25,6 +26,13 @@ public class DisplayMails : MonoBehaviour
         DisplayInbox();
         replies = new List<Button>();
         ToggleReplyButton(false);
+
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        //check for first time opening
+        if (!gameManager.Objectives[3].Completed)
+        {
+            gameManager.CompleteObjective(gameManager.Objectives[4]);
+        }
     }
 
     // Update is called once per frame

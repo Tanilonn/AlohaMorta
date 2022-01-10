@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         screenWidth = (backgroundSprite.sprite.bounds.size.x * background.localScale.x)/2;
-
     }
 
     void Update()
