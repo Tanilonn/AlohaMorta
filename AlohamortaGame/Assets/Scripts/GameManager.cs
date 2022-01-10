@@ -28,4 +28,9 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    public void CompleteObjective(Objective objective)
+    {
+        objective.Completed = true;
+    }
 }

@@ -21,8 +21,7 @@ public class PuzzleBehaviour : MonoBehaviour
     }
     public void Complete()
     {
-        Objective.Completed = true;
-
+        manager.CompleteObjective(Objective);
     }
 
     public void StartPuzzle()
