@@ -27,7 +27,6 @@ public class MailManager : MonoBehaviour
 
     public List<Mail> CheckNewEmails()
     {
-        Debug.Log("checking");
         var newMail = new List<Mail>();
         foreach(var mail in Mails)
         {
@@ -79,11 +78,9 @@ public class MailManager : MonoBehaviour
 
     public void SendReply(Reply reply)
     {
-        Debug.Log("reply");
         Story.Branches.Add(reply.ActivatesNode);
         if(CheckNewEmails().Count > 0)
         {
-            Debug.Log("this reply unlocked emails");
             NewMailsAvailable = true;
         }
     }

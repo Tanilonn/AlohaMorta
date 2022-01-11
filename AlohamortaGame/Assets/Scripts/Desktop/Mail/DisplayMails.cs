@@ -37,7 +37,6 @@ public class DisplayMails : MonoBehaviour
     {
         if(DesktopDateTime.Hour != lastHour || DesktopDateTime.Day != lastDay || manager.NewMailsAvailable)
         {
-            Debug.Log("update");
             lastDay = DesktopDateTime.Day;
             lastHour = DesktopDateTime.Hour;
             GetNewEmails();
@@ -47,7 +46,6 @@ public class DisplayMails : MonoBehaviour
 
     private void GetNewEmails()
     {
-        Debug.Log("Nieuwe mails ophalen");
         var newMail = manager.CheckNewEmails();
         if (newMail.Count > 0)
         {
@@ -70,7 +68,6 @@ public class DisplayMails : MonoBehaviour
 
     private void DisplayNewMails(List<Mail> newMails)
     {
-        Debug.Log("Nieuwe mails: " + newMails.Count);
         foreach (var mail in newMails)
         {
             mail.IsReceived = true;
