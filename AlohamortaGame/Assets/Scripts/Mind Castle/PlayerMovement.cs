@@ -39,6 +39,6 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         movement = new Vector2(Input.GetAxisRaw("Mouse X"), 0);
-        transform.Translate(movement * speed * Time.deltaTime);
+        transform.Translate(movement * (Mathf.Abs(Input.GetAxisRaw("Mouse X")) * speed) * Time.deltaTime);
     }
 }

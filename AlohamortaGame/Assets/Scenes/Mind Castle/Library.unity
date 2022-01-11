@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d587e7a60160fcb4c994bea162145fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 100
   backgroundSprite: {fileID: 1457613304}
   background: {fileID: 1457613302}
 --- !u!212 &331209401
