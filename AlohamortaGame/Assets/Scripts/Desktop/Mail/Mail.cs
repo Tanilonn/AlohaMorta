@@ -13,5 +13,8 @@ public class Mail
     public bool IsRead;
     public List<Reply> Replies;
     public Branch RequiredBranch;
+    public int RequiredObjective;
+    public int ReadObjective;
+    public int RepliedObjective;
 
 }

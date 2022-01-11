@@ -1613,6 +1613,9 @@ MonoBehaviour:
       RequiredNode: 0
       ActivatesNode: 0
     RequiredBranch: 0
+    RequiredObjective: 0
+    ReadObjective: 1
+    RepliedObjective: 2
   - Day: 1
     Hour: 10
     Sender: Persoon
@@ -1622,6 +1625,10 @@ MonoBehaviour:
     IsRead: 0
     Replies: []
     RequiredBranch: 1
+    RequiredObjective: 0
+    ReadObjective: 0
+    RepliedObjective: 0
+  NewMailsAvailable: 0
 --- !u!4 &810705448
 Transform:
   m_ObjectHideFlags: 0
@@ -2296,6 +2303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 810705447}
+  gameManager: {fileID: 0}
   ButtonPrefab: {fileID: 5240789007055958359, guid: 3f16f842ddd6993499d91c5048b14954,
     type: 3}
   ReplyButton: {fileID: 533523637}

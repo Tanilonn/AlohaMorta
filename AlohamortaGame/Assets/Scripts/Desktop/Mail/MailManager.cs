@@ -10,8 +10,12 @@ public class MailManager : MonoBehaviour
 
     public bool NewMailsAvailable;
 
+    private GameManager manager;
+
     private void Awake()
     {
+        manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+
         if (Instance == null)
         {
             Instance = this;
@@ -43,7 +47,8 @@ public class MailManager : MonoBehaviour
 
     public bool EmailAvailable(Mail mail)
     {
-        if (mail.RequiredBranch == Branch.none || Story.Branches.Contains(mail.RequiredBranch))
+        if ((mail.RequiredBranch == Branch.none || Story.Branches.Contains(mail.RequiredBranch)) &&
+            (mail.RequiredObjective == 0 || manager.Objectives[mail.RequiredObjective].Completed))
         {
             return true;
         }

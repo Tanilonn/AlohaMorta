@@ -91,6 +91,10 @@ public class DisplayMails : MonoBehaviour
         ReplyButton.onClick.RemoveAllListeners();
         ReplyButton.onClick.AddListener(delegate { DisplayReplies(mail); });
         mail.IsRead = true;
+        if (mail.ReadObjective != 0)
+        {
+            gameManager.CheckObjective(gameManager.Objectives[mail.ReadObjective]);
+        }
     }
 
     void DisplayReplies(Mail mail)
@@ -107,7 +111,16 @@ public class DisplayMails : MonoBehaviour
             button.transform.Find("Text").GetComponent<Text>().text = reply.Text.text;
             button.onClick.AddListener(delegate { manager.SendReply(reply); });
             button.onClick.AddListener(delegate { HideReplies(replies); });
+            button.onClick.AddListener(delegate { CheckReplyObjective(mail); });
             button.transform.SetAsFirstSibling();
+        }
+    }
+
+    private void CheckReplyObjective(Mail mail)
+    {
+        if (mail.RepliedObjective != 0)
+        {
+            gameManager.CheckObjective(gameManager.Objectives[mail.RepliedObjective]);
         }
     }
 
