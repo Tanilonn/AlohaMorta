@@ -15,6 +15,7 @@ public class DisplayMails : MonoBehaviour
     private List<Mail> Mails;
 
     private int lastHour;
+    private int lastDay;
     private List<Button> replies;
 
     // Start is called before the first frame update
@@ -34,15 +35,19 @@ public class DisplayMails : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(DesktopDateTime.Hour != lastHour)
+        if(DesktopDateTime.Hour != lastHour || DesktopDateTime.Day != lastDay || manager.NewMailsAvailable)
         {
+            Debug.Log("update");
+            lastDay = DesktopDateTime.Day;
             lastHour = DesktopDateTime.Hour;
             GetNewEmails();
+            manager.NewMailsAvailable = false;
         }
     }
 
     private void GetNewEmails()
     {
+        Debug.Log("Nieuwe mails ophalen");
         var newMail = manager.CheckNewEmails();
         if (newMail.Count > 0)
         {
@@ -65,8 +70,10 @@ public class DisplayMails : MonoBehaviour
 
     private void DisplayNewMails(List<Mail> newMails)
     {
+        Debug.Log("Nieuwe mails: " + newMails.Count);
         foreach (var mail in newMails)
         {
+            mail.IsReceived = true;
             var button = Instantiate(ButtonPrefab, transform);
             button.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
             button.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;

@@ -8,6 +8,8 @@ public class MailManager : MonoBehaviour
 
     public static MailManager Instance;
 
+    public bool NewMailsAvailable;
+
     private void Awake()
     {
         if (Instance == null)
@@ -25,15 +27,14 @@ public class MailManager : MonoBehaviour
 
     public List<Mail> CheckNewEmails()
     {
+        Debug.Log("checking");
         var newMail = new List<Mail>();
         foreach(var mail in Mails)
         {
-            if(mail.Day <= DesktopDateTime.Day && mail.Hour <= DesktopDateTime.Hour && !mail.IsReceived)
+            if(((mail.Day == DesktopDateTime.Day && mail.Hour <= DesktopDateTime.Hour) || (mail.Day < DesktopDateTime.Day)) && !mail.IsReceived)
             {
-                mail.IsReceived = true;
                 if (EmailAvailable(mail))
                 {
-                    //notification
                     newMail.Add(mail);
                 }
             }
@@ -78,7 +79,13 @@ public class MailManager : MonoBehaviour
 
     public void SendReply(Reply reply)
     {
+        Debug.Log("reply");
         Story.Branches.Add(reply.ActivatesNode);
+        if(CheckNewEmails().Count > 0)
+        {
+            Debug.Log("this reply unlocked emails");
+            NewMailsAvailable = true;
+        }
     }
 
 
