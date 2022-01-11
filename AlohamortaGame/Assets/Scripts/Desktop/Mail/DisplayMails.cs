@@ -10,13 +10,16 @@ public class DisplayMails : MonoBehaviour
     public Button ButtonPrefab;
     public Button ReplyButton;
     public Button ReplyPrefab;
+    public Image BijlagePrefab;
     public GameObject MailTextField;
+    public GameObject BijlageVeld;
     public Text MailCount;
     private List<Mail> Mails;
 
     private int lastHour;
     private int lastDay;
     private List<Button> replies;
+    private List<Image> bijlages;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class DisplayMails : MonoBehaviour
         MailCount.text = "Inbox (" + Mails.Count.ToString() + ")";
         DisplayInbox();
         replies = new List<Button>();
+        bijlages = new List<Image>();
         ToggleReplyButton(false);
 
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -83,14 +87,22 @@ public class DisplayMails : MonoBehaviour
 
     void DisplaySelectedMail(Mail mail)
     {
-        if (AvailableReplies(mail))
-        {
-            ToggleReplyButton(true);
-        }
+        HideBijlages();        
+        ToggleReplyButton(AvailableReplies(mail));
+        
         HideReplies(replies);
         MailTextField.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
         MailTextField.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
         MailTextField.transform.Find("Text").GetComponent<Text>().text = mail.Text.text;
+        if(mail.bijlages.Count > 0)
+        {
+            foreach (var bijlage in mail.bijlages)
+            {
+                var b = Instantiate(BijlagePrefab, BijlageVeld.transform);
+                b.sprite = bijlage;
+                bijlages.Add(b);
+            }
+        }
         ReplyButton.onClick.RemoveAllListeners();
         ReplyButton.onClick.AddListener(delegate { DisplayReplies(mail); });
         mail.IsRead = true;
@@ -99,6 +111,7 @@ public class DisplayMails : MonoBehaviour
             gameManager.CheckObjective(gameManager.Objectives[mail.ReadObjective]);
         }
     }
+   
 
     void DisplayReplies(Mail mail)
     {
@@ -128,6 +141,16 @@ public class DisplayMails : MonoBehaviour
             gameManager.CheckObjective(gameManager.Objectives[mail.RepliedObjective]);
         }
     }
+
+    void HideBijlages()
+    {
+        foreach (var bijlage in bijlages)
+        {
+            Destroy(bijlage.gameObject);
+        }
+        bijlages.Clear();
+    }
+
 
     void HideReplies(List<Button> buttons)
     {

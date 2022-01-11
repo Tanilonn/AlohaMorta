@@ -1053,7 +1053,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1481158913}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1830,35 +1830,90 @@ MonoBehaviour:
   - Day: 1
     Hour: 9
     Sender: Marie Bruggen
-    Subject: Introduction
+    Subject: Introductie
     Text: {fileID: 4900000, guid: 21a33697a1cbe3e4da9127f8bcc82293, type: 3}
     IsReceived: 0
     IsRead: 0
+    IsReplied: 0
     Replies:
     - Subject: Angry reply
       Text: {fileID: 4900000, guid: 56652b418c1df094f88260c66c54698e, type: 3}
       RequiredNode: 0
       ActivatesNode: 1
+      bijlages: []
     - Subject: Neutral reply
       Text: {fileID: 4900000, guid: 6afa31c9b9251054ebbdde27f6e76fd5, type: 3}
       RequiredNode: 0
-      ActivatesNode: 0
+      ActivatesNode: 1
+      bijlages: []
     RequiredBranch: 0
     RequiredObjective: 0
     ReadObjective: 1
     RepliedObjective: 2
+    bijlages: []
   - Day: 1
     Hour: 10
-    Sender: Persoon
-    Subject: Introduction twee
+    Sender: Marie Bruggen
+    Subject: 'Re: Introductie'
     Text: {fileID: 4900000, guid: e4c8359e9f58ef045a23745d5533b990, type: 3}
     IsReceived: 0
     IsRead: 0
+    IsReplied: 0
     Replies: []
     RequiredBranch: 1
     RequiredObjective: 0
     ReadObjective: 0
     RepliedObjective: 0
+    bijlages: []
+  - Day: 1
+    Hour: 11
+    Sender: Marie Bruggen
+    Subject: Rouwkaart kiezen
+    Text: {fileID: 4900000, guid: d6dd4f74276312b479fac5d8beaa73e9, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies:
+    - Subject: 'RE: Rouwkaart kiezen '
+      Text: {fileID: 4900000, guid: 624d69e988a36814faf71dd6c80537d8, type: 3}
+      RequiredNode: 1
+      ActivatesNode: 2
+      bijlages:
+      - {fileID: 21300000, guid: ee7d97d679ff4dd40a5213d8c84852e1, type: 3}
+    - Subject: 'RE: Rouwkaart kiezen '
+      Text: {fileID: 4900000, guid: f91955c417953084a902358e6e1df2fb, type: 3}
+      RequiredNode: 1
+      ActivatesNode: 2
+      bijlages:
+      - {fileID: 21300000, guid: 1daba29ac6da63a418084cf28d2d984d, type: 3}
+    - Subject: 'RE: Rouwkaart kiezen '
+      Text: {fileID: 4900000, guid: 27e8e4b549ee9d24e82cafe970ba3646, type: 3}
+      RequiredNode: 1
+      ActivatesNode: 2
+      bijlages:
+      - {fileID: 21300000, guid: da36c681c6448bf42a8b6e947ec8536f, type: 3}
+    RequiredBranch: 1
+    RequiredObjective: 0
+    ReadObjective: 10
+    RepliedObjective: 11
+    bijlages:
+    - {fileID: 21300000, guid: ee7d97d679ff4dd40a5213d8c84852e1, type: 3}
+    - {fileID: 21300000, guid: 1daba29ac6da63a418084cf28d2d984d, type: 3}
+    - {fileID: 21300000, guid: da36c681c6448bf42a8b6e947ec8536f, type: 3}
+  - Day: 1
+    Hour: 14
+    Sender: Marie Bruggen
+    Subject: 'RE: Rouwkaart kiezen '
+    Text: {fileID: 4900000, guid: 5ce0b1a90c0d34e43b3050306035221f, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies: []
+    RequiredBranch: 2
+    RequiredObjective: 0
+    ReadObjective: 0
+    RepliedObjective: 0
+    bijlages: []
   NewMailsAvailable: 0
 --- !u!4 &810705448
 Transform:
@@ -3995,6 +4050,7 @@ RectTransform:
   - {fileID: 533523635}
   - {fileID: 1626035260}
   - {fileID: 1245252705}
+  - {fileID: 2049612248}
   - {fileID: 581961325}
   m_Father: {fileID: 1032008152}
   m_RootOrder: 0
@@ -4124,8 +4180,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 172713874}
   m_HandleRect: {fileID: 172713873}
   m_Direction: 2
-  m_Value: 0.9999939
-  m_Size: 0.98529404
+  m_Value: 0.99999696
+  m_Size: 0.9710144
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4420,7 +4476,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 52f97f4892885774d9a027a03143d77c, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -4432,7 +4488,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reply
+  m_Text: Beantwoorden
 --- !u!222 &1571717833
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5406,7 +5462,10 @@ MonoBehaviour:
   ReplyButton: {fileID: 533523637}
   ReplyPrefab: {fileID: 7741006500784844677, guid: 15c45acae7c98e0409cf25c8fd5d441f,
     type: 3}
+  BijlagePrefab: {fileID: 3786704662059837630, guid: fcf20ce9ddb4cd9488936c045aa49fa2,
+    type: 3}
   MailTextField: {fileID: 1481158912}
+  BijlageVeld: {fileID: 2049612247}
   MailCount: {fileID: 1581663751}
 --- !u!1 &1745154520
 GameObject:
@@ -6136,6 +6195,97 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2049612247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049612248}
+  - component: {fileID: 2049612251}
+  - component: {fileID: 2049612250}
+  - component: {fileID: 2049612249}
+  m_Layer: 5
+  m_Name: Bijlages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2049612248
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049612247}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1481158913}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 600, y: 0}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &2049612249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049612247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+--- !u!114 &2049612250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049612247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!222 &2049612251
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049612247}
+  m_CullTransparentMesh: 0
 --- !u!1 &2104398110
 GameObject:
   m_ObjectHideFlags: 0

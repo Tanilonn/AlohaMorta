@@ -1,7 +1,6 @@
 ﻿public enum Branch
 {
     none,
-    testbranch,
-    otherbranch
-    
+    introbranch,
+    rouwkaartbranch,    
 }

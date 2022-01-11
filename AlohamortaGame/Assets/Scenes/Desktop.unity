@@ -2167,6 +2167,16 @@ MonoBehaviour:
     Description: Reach the last day
     Completed: 0
     Hidden: 1
+  - ID: 0
+    Name: Kaarten
+    Description: Lees de mail over rouwkaarten
+    Completed: 0
+    Hidden: 1
+  - ID: 0
+    Name: De eerste keuze
+    Description: Kies een rouwkaart
+    Completed: 0
+    Hidden: 0
 --- !u!4 &990330600
 Transform:
   m_ObjectHideFlags: 0

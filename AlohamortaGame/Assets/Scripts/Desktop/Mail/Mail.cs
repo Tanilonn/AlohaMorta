@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 [Serializable]
 public class Mail
 {
@@ -17,5 +19,6 @@ public class Mail
     public int RequiredObjective;
     public int ReadObjective;
     public int RepliedObjective;
+    public List<Sprite> bijlages;
 
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 [Serializable]
 public class Reply
@@ -6,6 +7,6 @@ public class Reply
     public string Subject;
     public TextAsset Text;
     public Branch RequiredNode;
-    public Branch ActivatesNode;   
-
+    public Branch ActivatesNode;
+    public List<Sprite> bijlages;
 }
