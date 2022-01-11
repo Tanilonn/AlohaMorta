@@ -1836,12 +1836,12 @@ MonoBehaviour:
     IsRead: 0
     IsReplied: 0
     Replies:
-    - Subject: Angry reply
+    - Subject: Formele klacht
       Text: {fileID: 4900000, guid: 56652b418c1df094f88260c66c54698e, type: 3}
       RequiredNode: 0
       ActivatesNode: 1
       bijlages: []
-    - Subject: Neutral reply
+    - Subject: 'RE: Introductie'
       Text: {fileID: 4900000, guid: 6afa31c9b9251054ebbdde27f6e76fd5, type: 3}
       RequiredNode: 0
       ActivatesNode: 1
