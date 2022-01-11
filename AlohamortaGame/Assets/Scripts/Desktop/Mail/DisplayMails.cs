@@ -125,6 +125,16 @@ public class DisplayMails : MonoBehaviour
             button.transform.Find("Sender").GetComponent<Text>().text = "Jij";
             button.transform.Find("Subject").GetComponent<Text>().text = reply.Subject;
             button.transform.Find("Text").GetComponent<Text>().text = reply.Text.text;
+
+            if (reply.bijlages.Count > 0)
+            {
+                foreach (var bijlage in reply.bijlages)
+                {
+                    var b = Instantiate(BijlagePrefab, button.transform);
+                    b.sprite = bijlage;                    
+                }
+            }
+            
             button.onClick.AddListener(delegate { manager.SendReply(reply); });
             button.onClick.AddListener(delegate { HideReplies(replies); });
             button.onClick.AddListener(delegate { CheckReplyObjective(mail); });
