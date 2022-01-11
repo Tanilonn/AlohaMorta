@@ -11,6 +11,7 @@ public class Mail
     public TextAsset Text;
     public bool IsReceived;
     public bool IsRead;
+    public bool IsReplied;
     public List<Reply> Replies;
     public Branch RequiredBranch;
     public int RequiredObjective;

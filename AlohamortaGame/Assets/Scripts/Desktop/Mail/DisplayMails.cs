@@ -83,7 +83,10 @@ public class DisplayMails : MonoBehaviour
 
     void DisplaySelectedMail(Mail mail)
     {
-        ToggleReplyButton(true);
+        if (AvailableReplies(mail))
+        {
+            ToggleReplyButton(true);
+        }
         HideReplies(replies);
         MailTextField.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
         MailTextField.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
@@ -118,6 +121,8 @@ public class DisplayMails : MonoBehaviour
 
     private void CheckReplyObjective(Mail mail)
     {
+        //set mail to replied
+        mail.IsReplied = true;
         if (mail.RepliedObjective != 0)
         {
             gameManager.CheckObjective(gameManager.Objectives[mail.RepliedObjective]);
@@ -136,6 +141,15 @@ public class DisplayMails : MonoBehaviour
     void ToggleReplyButton(bool state)
     {
         ReplyButton.gameObject.SetActive(state);
+    }
+
+    bool AvailableReplies(Mail mail)
+    {
+        if(manager.LoadReplies(mail).Count > 0  && !mail.IsReplied)
+        {
+            return true;
+        }
+        return false;
     }
 
 }
