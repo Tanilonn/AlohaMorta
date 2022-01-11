@@ -8,5 +8,6 @@ public class Puzzle
     public string Description;
     public string Solution;
     public int ObjectiveRef;
+    public bool ObjectiveOnly;
 }
 

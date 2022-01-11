@@ -8,10 +8,15 @@ public class TriggerMemory : MonoBehaviour
     public Memory memory;
     public Texture2D cursor;
     public Puzzle puzzle;
+
+    private GameManager gameManager;
     private PuzzleBehaviour puzzleScript;
+    private Objective objectiveOnlyArtifact;
 
     private void Awake()
     {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+
         manager = GetComponentInParent<ArtifactManager>();
         if(!string.IsNullOrWhiteSpace(puzzle.Name))
         {
@@ -20,6 +25,11 @@ public class TriggerMemory : MonoBehaviour
             puzzleScript.canvas = manager.puzzleCanvas;
             puzzleScript.GetObjective();
             puzzleScript.memory = this;
+        }
+        else if (puzzle.ObjectiveOnly)
+        {
+            //set private objective that is set to complete on first time opening
+            objectiveOnlyArtifact = gameManager.Objectives[puzzle.ObjectiveRef];
         }
        
 }
@@ -63,6 +73,11 @@ public class TriggerMemory : MonoBehaviour
 
     void OpenMemory()
     {
+        //if private objective is set complete it
+        if (objectiveOnlyArtifact != null)
+        {
+            gameManager.CheckObjective(objectiveOnlyArtifact);
+        }
         manager.canvas.canvas.gameObject.SetActive(true);
         SetActiveBackground(false);
         manager.canvas.title.text = memory.Title;

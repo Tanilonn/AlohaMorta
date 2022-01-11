@@ -31,6 +31,18 @@ public class GameManager : MonoBehaviour
 
     public void CompleteObjective(Objective objective)
     {
+        if (!Objectives[5].Completed)
+        {
+            Objectives[5].Completed = true;
+        }
         objective.Completed = true;
+    }
+
+    public void CheckObjective(Objective objective)
+    {
+        if (!objective.Completed)
+        {
+            CompleteObjective(objective);
+        }
     }
 }

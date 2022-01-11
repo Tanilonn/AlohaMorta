@@ -16,7 +16,6 @@ public class PuzzleBehaviour : MonoBehaviour
     }
     public void GetObjective()
     {
-        Debug.Log(puzzle.ObjectiveRef);
         Objective = manager.Objectives[puzzle.ObjectiveRef];
     }
     public void Complete()

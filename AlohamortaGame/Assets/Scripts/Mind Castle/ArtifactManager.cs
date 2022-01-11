@@ -19,11 +19,7 @@ public class ArtifactManager : MonoBehaviour
         }
 
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        //check for first time opening
-        if (!manager.Objectives[3].Completed)
-        {
-            manager.CompleteObjective(manager.Objectives[3]);
-        }
+        manager.CheckObjective(manager.Objectives[3]);
     }
 
     // Update is called once per frame

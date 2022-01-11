@@ -28,11 +28,7 @@ public class DisplayMails : MonoBehaviour
         ToggleReplyButton(false);
 
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        //check for first time opening
-        if (!gameManager.Objectives[3].Completed)
-        {
-            gameManager.CompleteObjective(gameManager.Objectives[4]);
-        }
+        gameManager.CheckObjective(gameManager.Objectives[4]);
     }
 
     // Update is called once per frame
