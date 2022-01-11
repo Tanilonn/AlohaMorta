@@ -2119,52 +2119,52 @@ MonoBehaviour:
   Objectives:
   - ID: 0
     Name: CD
-    Description: Solve the puzzle to open the CD artifact in the mind castle.
+    Description: Los de puzzel op die het CD artifact opent
     Completed: 0
     Hidden: 0
   - ID: 0
     Name: Intro
-    Description: Read the introduction email
+    Description: Lees de introductie email
     Completed: 0
     Hidden: 0
   - ID: 0
-    Name: First reply
-    Description: Respond to the introduction email
+    Name: Eerste antwoord
+    Description: Antwoord op de intro email
     Completed: 0
     Hidden: 0
   - ID: 0
     Name: Nora's Mind Castle
-    Description: Visit Nora's Mind Castle for the first time
+    Description: Bezoek Nora's Mind Castle voor de eerste keer
     Completed: 0
     Hidden: 0
   - ID: 0
     Name: Email Beginner
-    Description: Open your email for the first time
+    Description: Open je email voor de eerste keer
     Completed: 0
     Hidden: 0
   - ID: 0
     Name: Goals
-    Description: Complete your first objective
+    Description: Voltooi je eerste doel
     Completed: 0
     Hidden: 1
   - ID: 0
-    Name: Birthday flags
-    Description: Open the birthday artifact in Nora's Mind castle
+    Name: Verjaardag vlaggen
+    Description: Open de verjaardag vlaggetjes in Nora's Mind Castle
     Completed: 0
     Hidden: 0
   - ID: 0
     Name: Time Traveller
-    Description: Skip forward in time by putting the computer in stand-by
+    Description: Skip vooruit in de tijd door de PC in slaapstand te zetten
     Completed: 0
     Hidden: 0
   - ID: 0
     Name: Sleepyhead
-    Description: Skip forward to the next day by shutting off the computer
+    Description: Skip een dag vooruit door de PC uit te zetten
     Completed: 0
     Hidden: 0
   - ID: 0
-    Name: Last day
-    Description: Reach the last day
+    Name: Laatste dag
+    Description: Bereik de dag voor de uitvaart
     Completed: 0
     Hidden: 1
   - ID: 0
