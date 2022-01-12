@@ -1562,6 +1562,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591935387}
   m_CullTransparentMesh: 0
+--- !u!1 &629844835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629844837}
+  - component: {fileID: 629844836}
+  m_Layer: 0
+  m_Name: MailManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &629844836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629844835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d92d06f2ac5234eaa483fd2df1d6f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mails:
+  - Day: 1
+    Hour: 9
+    Sender: Marie Bruggen
+    Subject: Introductie
+    Text: {fileID: 4900000, guid: 21a33697a1cbe3e4da9127f8bcc82293, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies:
+    - Subject: Formele klacht
+      Text: {fileID: 4900000, guid: 56652b418c1df094f88260c66c54698e, type: 3}
+      RequiredNode: 0
+      ActivatesNode: 1
+      bijlages: []
+    - Subject: 'RE: Introductie'
+      Text: {fileID: 4900000, guid: 6afa31c9b9251054ebbdde27f6e76fd5, type: 3}
+      RequiredNode: 0
+      ActivatesNode: 1
+      bijlages: []
+    RequiredBranch: 0
+    RequiredObjective: 0
+    ReadObjective: 1
+    RepliedObjective: 2
+    bijlages: []
+  - Day: 1
+    Hour: 10
+    Sender: Marie Bruggen
+    Subject: 'Re: Introductie'
+    Text: {fileID: 4900000, guid: e4c8359e9f58ef045a23745d5533b990, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies: []
+    RequiredBranch: 1
+    RequiredObjective: 0
+    ReadObjective: 0
+    RepliedObjective: 0
+    bijlages: []
+  - Day: 1
+    Hour: 11
+    Sender: Marie Bruggen
+    Subject: Rouwkaart kiezen
+    Text: {fileID: 4900000, guid: d6dd4f74276312b479fac5d8beaa73e9, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies:
+    - Subject: 'RE: Rouwkaart kiezen '
+      Text: {fileID: 4900000, guid: 624d69e988a36814faf71dd6c80537d8, type: 3}
+      RequiredNode: 1
+      ActivatesNode: 2
+      bijlages:
+      - {fileID: 21300000, guid: ee7d97d679ff4dd40a5213d8c84852e1, type: 3}
+    - Subject: 'RE: Rouwkaart kiezen '
+      Text: {fileID: 4900000, guid: f91955c417953084a902358e6e1df2fb, type: 3}
+      RequiredNode: 1
+      ActivatesNode: 2
+      bijlages:
+      - {fileID: 21300000, guid: 1daba29ac6da63a418084cf28d2d984d, type: 3}
+    - Subject: 'RE: Rouwkaart kiezen '
+      Text: {fileID: 4900000, guid: 27e8e4b549ee9d24e82cafe970ba3646, type: 3}
+      RequiredNode: 1
+      ActivatesNode: 2
+      bijlages:
+      - {fileID: 21300000, guid: da36c681c6448bf42a8b6e947ec8536f, type: 3}
+    RequiredBranch: 1
+    RequiredObjective: 6
+    ReadObjective: 10
+    RepliedObjective: 11
+    bijlages:
+    - {fileID: 21300000, guid: ee7d97d679ff4dd40a5213d8c84852e1, type: 3}
+    - {fileID: 21300000, guid: 1daba29ac6da63a418084cf28d2d984d, type: 3}
+    - {fileID: 21300000, guid: da36c681c6448bf42a8b6e947ec8536f, type: 3}
+  - Day: 1
+    Hour: 14
+    Sender: Marie Bruggen
+    Subject: 'RE: Rouwkaart kiezen '
+    Text: {fileID: 4900000, guid: 5ce0b1a90c0d34e43b3050306035221f, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies: []
+    RequiredBranch: 2
+    RequiredObjective: 0
+    ReadObjective: 0
+    RepliedObjective: 0
+    bijlages: []
+  NewMailsAvailable: 0
+--- !u!4 &629844837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629844835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2773.3555, y: 1452.5518, z: -46706.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &667951826
 GameObject:
   m_ObjectHideFlags: 0

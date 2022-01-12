@@ -24,6 +24,9 @@ public class DisplayMails : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        manager = GameObject.Find("MailManager").GetComponent<MailManager>();
+
         Mails = manager.LoadEmails();
         GetNewEmails();
         MailCount.text = "Inbox (" + Mails.Count.ToString() + ")";
@@ -32,7 +35,7 @@ public class DisplayMails : MonoBehaviour
         bijlages = new List<Image>();
         ToggleReplyButton(false);
 
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        
         gameManager.CheckObjective(gameManager.Objectives[4]);
     }
 
@@ -63,10 +66,7 @@ public class DisplayMails : MonoBehaviour
     {
         foreach(var mail in Mails)
         {
-            var button = Instantiate(ButtonPrefab, new Vector2(ButtonPrefab.transform.position.x, ButtonPrefab.transform.position.y), Quaternion.identity, transform.parent);
-            button.GetComponentInChildren<Text>().text = mail.Subject;
-            button.onClick.AddListener(delegate { DisplaySelectedMail(mail); });
-            button.transform.SetAsFirstSibling();
+            DisplayMail(mail);
         }
     }
 
@@ -75,13 +75,18 @@ public class DisplayMails : MonoBehaviour
         foreach (var mail in newMails)
         {
             mail.IsReceived = true;
-            var button = Instantiate(ButtonPrefab, transform);
-            button.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
-            button.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
-            button.transform.Find("Text").GetComponent<Text>().text = mail.Text.text.Replace(System.Environment.NewLine, "");
-            button.onClick.AddListener(delegate { DisplaySelectedMail(mail); });
-            button.transform.SetAsFirstSibling();
+            DisplayMail(mail);            
         }
+    }
+
+    void DisplayMail(Mail mail)
+    {
+        var button = Instantiate(ButtonPrefab, transform);
+        button.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
+        button.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
+        button.transform.Find("Text").GetComponent<Text>().text = mail.Text.text.Replace(System.Environment.NewLine, "");
+        button.onClick.AddListener(delegate { DisplaySelectedMail(mail); });
+        button.transform.SetAsFirstSibling();
     }
 
 
@@ -178,7 +183,12 @@ public class DisplayMails : MonoBehaviour
 
     bool AvailableReplies(Mail mail)
     {
-        if(manager.LoadReplies(mail).Count > 0  && !mail.IsReplied)
+        var replies = manager.LoadReplies(mail).Count;
+        if (mail.IsReplied ||  replies == 0)
+        {
+            return false;
+        }
+        else if(!mail.IsReplied && replies > 0 )
         {
             return true;
         }
