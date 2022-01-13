@@ -28,9 +28,9 @@ public class DisplayMails : MonoBehaviour
         manager = GameObject.Find("MailManager").GetComponent<MailManager>();
 
         Mails = manager.LoadEmails();
-        GetNewEmails();
         MailCount.text = "Inbox (" + Mails.Count.ToString() + ")";
         DisplayInbox();
+        GetNewEmails();
         replies = new List<Button>();
         bijlages = new List<Image>();
         ToggleReplyButton(false);
