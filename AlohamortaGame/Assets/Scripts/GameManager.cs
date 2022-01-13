@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public List<Objective> Objectives = new List<Objective>();
+    public GameObject NotificationPrefab;
+    public GameObject NotificationConPrefab;
+    private GameObject NotificationContainer;
 
 
     private void Awake()
@@ -36,6 +40,26 @@ public class GameManager : MonoBehaviour
             Objectives[5].Completed = true;
         }
         objective.Completed = true;
+        StartCoroutine(NotificationCoroutine("You completed the objective: " + objective.Name + "!"));
+    }
+
+    IEnumerator NotificationCoroutine(string notification)
+    {
+        Canvas canvas = (Canvas)FindObjectOfType(typeof(Canvas));
+        if (canvas != null)
+        {
+            if(NotificationContainer == null)
+            {
+                NotificationContainer = Instantiate(NotificationConPrefab, canvas.transform);
+            }
+            var n = Instantiate(NotificationPrefab, NotificationContainer.transform);
+            n.transform.Find("Text").GetComponent<Text>().text = notification;
+
+            //yield on a new YieldInstruction that waits for 5 seconds.
+            yield return new WaitForSeconds(5);
+            
+            Destroy(n);           
+        }        
     }
 
     public void CheckObjective(Objective objective)

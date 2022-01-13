@@ -1546,6 +1546,10 @@ MonoBehaviour:
     Description: Bekijk minstens 1 artifact in de bibliotheek in Nora's Mind Castle
     Completed: 0
     Hidden: 0
+  NotificationPrefab: {fileID: 8067836376100414737, guid: 5f1fb38d3bfcdd5409fb51f17e8676e4,
+    type: 3}
+  NotificationConPrefab: {fileID: 6029275751725959198, guid: 299d0c0740b5d6943acd6e8a7a74e3e2,
+    type: 3}
 --- !u!4 &644268835
 Transform:
   m_ObjectHideFlags: 0
