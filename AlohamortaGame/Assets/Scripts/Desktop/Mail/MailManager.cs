@@ -56,6 +56,7 @@ public class MailManager : MonoBehaviour
                     if (!mail.IsNotified)
                     {
                         mail.IsNotified = true;
+                        Notifications.MailUnread++;
                         StartCoroutine(manager.NotificationCoroutine("Nieuwe email van " + mail.Sender + " betreft: " + mail.Subject, 1));
                     }
                 }

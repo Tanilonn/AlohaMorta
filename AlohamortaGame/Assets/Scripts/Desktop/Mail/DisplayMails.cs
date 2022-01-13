@@ -78,12 +78,32 @@ public class DisplayMails : MonoBehaviour
 
     void DisplayMail(Mail mail)
     {
+        Color unread = new Color32(131, 166, 255, 255);
+
         var button = Instantiate(ButtonPrefab, transform);
         button.transform.Find("Sender").GetComponent<Text>().text = mail.Sender;
         button.transform.Find("Subject").GetComponent<Text>().text = mail.Subject;
         button.transform.Find("Text").GetComponent<Text>().text = mail.Text.text.Replace(System.Environment.NewLine, "");
         button.onClick.AddListener(delegate { DisplaySelectedMail(mail); });
+        button.onClick.AddListener(delegate { ReadMail(button, mail); });
         button.transform.SetAsFirstSibling();
+        if (!mail.IsRead)
+        {
+            button.image.color = unread;
+        }
+    }
+
+    void ReadMail(Button button, Mail mail)
+    {
+        if (!mail.IsRead)
+        {
+            Color read = new Color32(209, 209, 209, 255);
+            Notifications.MailUnread--;
+            mail.IsRead = true;
+
+            button.image.color = read;
+        }
+        
     }
 
 
@@ -107,7 +127,6 @@ public class DisplayMails : MonoBehaviour
         }
         ReplyButton.onClick.RemoveAllListeners();
         ReplyButton.onClick.AddListener(delegate { DisplayReplies(mail); });
-        mail.IsRead = true;
         if (mail.ReadObjective != 0)
         {
             gameManager.CheckObjective(gameManager.Objectives[mail.ReadObjective]);
