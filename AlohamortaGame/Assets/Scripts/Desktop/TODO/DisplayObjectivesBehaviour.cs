@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DisplayObjectivesBehaviour : MonoBehaviour
@@ -15,9 +16,20 @@ public class DisplayObjectivesBehaviour : MonoBehaviour
     {
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         DisplayObjectives();
-    }    
+        Notifications.ToDoUnread = 0;
+    }
 
-    
+    private void Update()
+    {
+        if(Notifications.ToDoUnread > 0)
+        {
+            //reload scene
+            Scene scene = SceneManager.GetActiveScene(); 
+            SceneManager.LoadScene(scene.name);
+        }
+    }
+
+
     private void DisplayObjectives()
     {
         Color red = new Color32(224, 164, 164, 255);

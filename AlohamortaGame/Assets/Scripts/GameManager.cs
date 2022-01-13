@@ -39,7 +39,9 @@ public class GameManager : MonoBehaviour
         if (!Objectives[5].Completed)
         {
             Objectives[5].Completed = true;
+            Notifications.ToDoUnread++;
         }
+        Notifications.ToDoUnread++;
         objective.Completed = true;
         StartCoroutine(NotificationCoroutine("You completed the objective: " + objective.Name + "!", 0));
     }
