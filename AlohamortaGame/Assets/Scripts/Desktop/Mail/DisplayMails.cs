@@ -27,7 +27,7 @@ public class DisplayMails : MonoBehaviour
         manager = GameObject.Find("MailManager").GetComponent<MailManager>();
 
         Mails = manager.LoadEmails();
-        MailCount.text = "Inbox (" + Mails.Count.ToString() + ")";
+        MailCount.text = Notifications.MailUnread.ToString();
         DisplayInbox();
         GetNewEmails();
         replies = new List<Button>();
@@ -45,6 +45,7 @@ public class DisplayMails : MonoBehaviour
         {            
             GetNewEmails();
             manager.NewMailsAvailable = false;
+            MailCount.text = Notifications.MailUnread.ToString();
         }
     }
 
