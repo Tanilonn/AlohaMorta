@@ -83,8 +83,11 @@ public class MailManager : MonoBehaviour
 
     public void SendReply(Reply reply)
     {
-        Story.Branches.Add(reply.ActivatesNode);
-        if(CheckNewEmails().Count > 0)
+        foreach(var branch in reply.ActivatesNodes)
+        {
+            Story.Branches.Add(branch);
+        }
+        if (CheckNewEmails().Count > 0)
         {
             NewMailsAvailable = true;
         }

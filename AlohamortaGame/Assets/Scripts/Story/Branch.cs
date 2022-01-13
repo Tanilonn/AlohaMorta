@@ -2,5 +2,7 @@
 {
     none,
     introbranch,
-    rouwkaartbranch,    
+    rouwkaartbranch,
+    introAngry,
+    introNeutral,
 }

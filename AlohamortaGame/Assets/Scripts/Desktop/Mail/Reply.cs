@@ -7,6 +7,6 @@ public class Reply
     public string Subject;
     public TextAsset Text;
     public Branch RequiredNode;
-    public Branch ActivatesNode;
+    public List<Branch> ActivatesNodes;
     public List<Sprite> bijlages;
 }
