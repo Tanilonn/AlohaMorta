@@ -1707,6 +1707,58 @@ MonoBehaviour:
     ReadObjective: 0
     RepliedObjective: 0
     bijlages: []
+  - Subject: Hoi Lieverd
+    Day: 1
+    Hour: 17
+    Sender: Mama
+    Text: {fileID: 4900000, guid: 04507302494dd5b4fb064ddb320792fb, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies:
+    - Subject: Ik hoop het
+      Text: {fileID: 4900000, guid: e2d6386c344576149b3c335cced2db3e, type: 3}
+      RequiredNode: 0
+      ActivatesNodes: 0500000006000000
+      bijlages: []
+    - Subject: Het is het minste wat ik kan doen
+      Text: {fileID: 4900000, guid: bf2fd37bc6994ba40828f5fcb8d52b3e, type: 3}
+      RequiredNode: 0
+      ActivatesNodes: 0500000007000000
+      bijlages: []
+    RequiredBranch: 0
+    RequiredObjective: 0
+    ReadObjective: 0
+    RepliedObjective: 0
+    bijlages: []
+  - Subject: 'RE: Ik hoop het'
+    Day: 1
+    Hour: 17
+    Sender: Mama
+    Text: {fileID: 4900000, guid: 2c6bacdd0684ddc4a95b350d2ded6b07, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies: []
+    RequiredBranch: 6
+    RequiredObjective: 1
+    ReadObjective: 0
+    RepliedObjective: 0
+    bijlages: []
+  - Subject: 'RE: Het is het minste wat ik kan doen'
+    Day: 1
+    Hour: 17
+    Sender: Mama
+    Text: {fileID: 4900000, guid: 40007484af013654d83aeb956afe976f, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies: []
+    RequiredBranch: 7
+    RequiredObjective: 0
+    ReadObjective: 0
+    RepliedObjective: 0
+    bijlages: []
   NewMailsAvailable: 0
 --- !u!4 &629844837
 Transform:
