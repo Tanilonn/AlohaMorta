@@ -1753,8 +1753,8 @@ MonoBehaviour:
       - {fileID: 21300000, guid: da36c681c6448bf42a8b6e947ec8536f, type: 3}
     RequiredBranch: 5
     RequiredObjective: 12
-    ReadObjective: 0
-    RepliedObjective: 0
+    ReadObjective: 10
+    RepliedObjective: 11
     bijlages:
     - {fileID: 21300000, guid: ee7d97d679ff4dd40a5213d8c84852e1, type: 3}
     - {fileID: 21300000, guid: 1daba29ac6da63a418084cf28d2d984d, type: 3}
@@ -1793,7 +1793,7 @@ MonoBehaviour:
       ActivatesNodes: 0800000009000000
       bijlages: []
     RequiredBranch: 2
-    RequiredObjective: 0
+    RequiredObjective: 11
     ReadObjective: 0
     RepliedObjective: 0
     bijlages: []
