@@ -39,6 +39,7 @@ public class MailManager : MonoBehaviour
                 if (EmailAvailable(mail))
                 {
                     newMail.Add(mail);
+                    StartCoroutine(manager.NotificationCoroutine("Nieuwe email van " + mail.Sender + " betreft: " + mail.Subject, 1));
                 }
             }
         }

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public List<Objective> Objectives = new List<Objective>();
+    public List<Sprite> NotificationSprites;
     public GameObject NotificationPrefab;
     public GameObject NotificationConPrefab;
     private GameObject NotificationContainer;
@@ -40,10 +41,10 @@ public class GameManager : MonoBehaviour
             Objectives[5].Completed = true;
         }
         objective.Completed = true;
-        StartCoroutine(NotificationCoroutine("You completed the objective: " + objective.Name + "!"));
+        StartCoroutine(NotificationCoroutine("You completed the objective: " + objective.Name + "!", 0));
     }
 
-    IEnumerator NotificationCoroutine(string notification)
+    public IEnumerator NotificationCoroutine(string notification, int sprite)
     {
         Canvas canvas = (Canvas)FindObjectOfType(typeof(Canvas));
         if (canvas != null)
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
             }
             var n = Instantiate(NotificationPrefab, NotificationContainer.transform);
             n.transform.Find("Text").GetComponent<Text>().text = notification;
+            n.transform.Find("Icon").GetComponent<Image>().sprite = NotificationSprites[sprite];
 
             //yield on a new YieldInstruction that waits for 5 seconds.
             yield return new WaitForSeconds(5);
