@@ -190,19 +190,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Beste Mr./Mevr. van Winsum,\r\n\r\nOp 3 Augustus om 15.33 hebben wij een
-    melding doorgekregen van het overlijden van N.B. van Winsum, geboren 13-10-2074
-    te Deventer, Overijssel.\r\n\r\nAllereerst gecondoleerd met het verlies.\r\n\r\nZoals
-    het protocol aangeeft, ontvangt u hierbij de gegevens van Mevr. N.B. van Winsum\u2019s
-    CHIP, om u te helpen met het organiseren van Mevr. N.B. van Winsum\u2019s begrafenis.\r\n\r\nAttentie:
-    Vanwege [reden van overlijden] is de chip beschadigd geraakt en zijn niet alle
-    gegevens betreft wensen en/of testament meer duidelijk of beschikbaar.\r\n\r\nDe
-    app naar de gegevens is inmiddels ge\xFCpload naar uw bureaublad.\r\n\r\nMocht
-    dit niet het geval zijn, neem dan zo snel mogelijk contact met ons op. Dit kan
-    door te bellen naar 0800-2563, of een mail te sturen naar dit e-mailadres.\r\n\r\nNogmaals
-    gecondoleerd.\r\n\r\nMet vriendelijke groet,\r\n\r\nMarie Bruggen\r\nSecretaris
-    Commissie van Hooggevoelige Interne Persoonsgegevens\r\nTel.: 0800-2563     Email:
-    contact@chip.nederlandseoverheid.nl"
+  m_Text: "De telefoon gaat:\n\nHey lieverd,\r\nJe moet per direct naar huis toe
+    komen. Er is iets met Nora gebeurd\u2026\r\n\u2026 ze heeft een ongeluk gehad.
+    Er was een auto die ze niet zag invoegen en toen stuurde haar auto haar tegen
+    een vrachtwagen aan..\r\nZe is nu in het ziekenhuis en we weten niet of ze het
+    gaat halen..\r\nAlsjeblieft, kom zo snel mogelijk hierheen.\r\n[Pauze]\r\nLieverd?\r\nBen
+    je daar?\r\nLieverd?\r\n"
 --- !u!222 &41499832
 CanvasRenderer:
   m_ObjectHideFlags: 0
