@@ -9,11 +9,12 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed;
     public SpriteRenderer backgroundSprite;
-    public Transform background;
+    private readonly float scale = 1.3f;
 
     private void Awake()
     {
-        screenWidth = (backgroundSprite.sprite.bounds.size.x * background.localScale.x)/2;
+        var halfCam = Camera.main.orthographicSize * Screen.width / Screen.height;
+        screenWidth = (backgroundSprite.sprite.bounds.size.x * scale / 2) - halfCam;
     }
 
     void Update()
@@ -24,14 +25,24 @@ public class PlayerMovement : MonoBehaviour
             Move();
         }
         //if too far left only allow right input
-        else if (transform.position.x < -screenWidth && Input.GetAxis("Mouse X") > 0)
+        else if (transform.position.x <= -screenWidth)
         {
-            Move();
+            transform.position = new Vector2(-screenWidth, 0);
+
+            if (Input.GetAxis("Mouse X") > 0)
+            {
+                Move();
+            }
         }
         //if too far right only allow left input
-        else if (transform.position.x > screenWidth && Input.GetAxis("Mouse X") < 0)
+        else if (transform.position.x >= screenWidth)
         {
-            Move();
+            transform.position = new Vector2(screenWidth, 0);
+
+            if (Input.GetAxis("Mouse X") < 0)
+            {
+                Move();
+            }
         }
 
     }
