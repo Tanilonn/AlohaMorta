@@ -145,8 +145,9 @@ public class DisplayMails : MonoBehaviour
             var button = Instantiate(ReplyPrefab, MailTextField.transform);
             replies.Add(button);
             button.transform.Find("Sender").GetComponent<Text>().text = "Jij";
-            button.transform.Find("Subject").GetComponent<Text>().text = reply.Subject;
-            button.transform.Find("Text").GetComponent<Text>().text = reply.Text.text;
+            button.transform.Find("Subject").GetComponent<Text>().text = reply.OptieNaam;
+            button.transform.Find("Text").GetComponent<Text>().text = "";
+
 
             if (reply.bijlages.Count > 0)
             {
@@ -160,8 +161,31 @@ public class DisplayMails : MonoBehaviour
             button.onClick.AddListener(delegate { manager.SendReply(reply); });
             button.onClick.AddListener(delegate { HideReplies(replies); });
             button.onClick.AddListener(delegate { CheckReplyObjective(mail); });
+            button.onClick.AddListener(delegate { DisplaySentReply(reply); });
             button.transform.SetAsFirstSibling();
         }
+    }
+
+    private void DisplaySentReply(Reply reply)
+    {
+        HideBijlages();
+        ToggleReplyButton(false);
+
+        HideReplies(replies);
+        MailTextField.transform.Find("Sender").GetComponent<Text>().text = reply.Subject;
+        MailTextField.transform.Find("Subject").GetComponent<Text>().text = "Net verzonden";
+        MailTextField.transform.Find("Text").GetComponent<Text>().text = reply.Text.text;
+        if (reply.bijlages.Count > 0)
+        {
+            foreach (var bijlage in reply.bijlages)
+            {
+                var b = Instantiate(BijlagePrefab, BijlageVeld.transform);
+                b.sprite = bijlage;
+                bijlages.Add(b);
+            }
+        }
+        ReplyButton.onClick.RemoveAllListeners();
+        
     }
 
     private void CheckReplyObjective(Mail mail)

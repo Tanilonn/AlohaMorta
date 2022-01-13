@@ -5,6 +5,7 @@ using UnityEngine;
 public class Reply
 {    
     public string Subject;
+    public string OptieNaam;
     public TextAsset Text;
     public Branch RequiredNode;
     public List<Branch> ActivatesNodes;

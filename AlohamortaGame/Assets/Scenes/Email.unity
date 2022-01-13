@@ -4544,11 +4544,13 @@ MonoBehaviour:
     IsNotified: 0
     Replies:
     - Subject: 'RE: Fwd: Registratie overlijden 285867'
+      OptieNaam: Wat een verschrikkelijk onpersoonlijk bericht.
       Text: {fileID: 4900000, guid: 56652b418c1df094f88260c66c54698e, type: 3}
       RequiredNode: 0
       ActivatesNodes: 0100000003000000
       bijlages: []
     - Subject: 'RE: Fwd: Registratie overlijden 285867'
+      OptieNaam: Ik kan het nog steeds niet geloven.
       Text: {fileID: 4900000, guid: 6afa31c9b9251054ebbdde27f6e76fd5, type: 3}
       RequiredNode: 0
       ActivatesNodes: 0100000004000000
@@ -4614,11 +4616,13 @@ MonoBehaviour:
     IsNotified: 0
     Replies:
     - Subject: Ik hoop het
+      OptieNaam: Ik hoop het.
       Text: {fileID: 4900000, guid: e2d6386c344576149b3c335cced2db3e, type: 3}
       RequiredNode: 0
       ActivatesNodes: 0500000006000000
       bijlages: []
     - Subject: Het is het minste wat ik kan doen
+      OptieNaam: Het is het minste wat ik kan doen.
       Text: {fileID: 4900000, guid: bf2fd37bc6994ba40828f5fcb8d52b3e, type: 3}
       RequiredNode: 0
       ActivatesNodes: 0500000007000000
@@ -4684,18 +4688,21 @@ MonoBehaviour:
     IsNotified: 0
     Replies:
     - Subject: 'Re: Re: Rouwkaart Nora'
+      OptieNaam: Graag zou ik het eerste ontwerp kiezen.
       Text: {fileID: 4900000, guid: 624d69e988a36814faf71dd6c80537d8, type: 3}
       RequiredNode: 0
       ActivatesNodes: 02000000
       bijlages:
       - {fileID: 21300000, guid: ee7d97d679ff4dd40a5213d8c84852e1, type: 3}
     - Subject: 'Re: Re: Rouwkaart Nora'
+      OptieNaam: Graag zou ik het tweede ontwerp kiezen.
       Text: {fileID: 4900000, guid: f91955c417953084a902358e6e1df2fb, type: 3}
       RequiredNode: 0
       ActivatesNodes: 02000000
       bijlages:
       - {fileID: 21300000, guid: 1daba29ac6da63a418084cf28d2d984d, type: 3}
     - Subject: 'Re: Re: Rouwkaart Nora'
+      OptieNaam: Graag zou ik het derde ontwerp kiezen.
       Text: {fileID: 4900000, guid: 27e8e4b549ee9d24e82cafe970ba3646, type: 3}
       RequiredNode: 0
       ActivatesNodes: 02000000
@@ -4735,11 +4742,13 @@ MonoBehaviour:
     IsNotified: 0
     Replies:
     - Subject: Denk je?
+      OptieNaam: Denk je?
       Text: {fileID: 4900000, guid: 1624cef72b816114a8572b2e44576246, type: 3}
       RequiredNode: 0
       ActivatesNodes: 0800000009000000
       bijlages: []
     - Subject: Maar wat als...?
+      OptieNaam: Maar wat als...?
       Text: {fileID: 4900000, guid: 96ab0f548d2a02e49ab49242abe491c4, type: 3}
       RequiredNode: 0
       ActivatesNodes: 0800000009000000
