@@ -2974,6 +2974,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1840944952}
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: StartScherm
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1227606521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3442,6 +3453,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1840944952}
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: StartScherm
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1296081061
@@ -4519,6 +4541,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies:
     - Subject: 'RE: Fwd: Registratie overlijden 285867'
       Text: {fileID: 4900000, guid: 56652b418c1df094f88260c66c54698e, type: 3}
@@ -4543,6 +4566,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 4
     RequiredObjective: 0
@@ -4557,6 +4581,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 3
     RequiredObjective: 0
@@ -4571,6 +4596,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 0
     RequiredObjective: 1
@@ -4585,6 +4611,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies:
     - Subject: Ik hoop het
       Text: {fileID: 4900000, guid: e2d6386c344576149b3c335cced2db3e, type: 3}
@@ -4609,6 +4636,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 6
     RequiredObjective: 1
@@ -4623,6 +4651,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 7
     RequiredObjective: 0
@@ -4637,6 +4666,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 5
     RequiredObjective: 0
@@ -4651,6 +4681,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies:
     - Subject: 'Re: Re: Rouwkaart Nora'
       Text: {fileID: 4900000, guid: 624d69e988a36814faf71dd6c80537d8, type: 3}
@@ -4686,6 +4717,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 2
     RequiredObjective: 0
@@ -4700,6 +4732,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies:
     - Subject: Denk je?
       Text: {fileID: 4900000, guid: 1624cef72b816114a8572b2e44576246, type: 3}
@@ -4724,6 +4757,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 9
     RequiredObjective: 0
@@ -4738,6 +4772,7 @@ MonoBehaviour:
     IsReceived: 0
     IsRead: 0
     IsReplied: 0
+    IsNotified: 0
     Replies: []
     RequiredBranch: 10
     RequiredObjective: 0
