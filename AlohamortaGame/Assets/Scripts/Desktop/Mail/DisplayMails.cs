@@ -16,8 +16,7 @@ public class DisplayMails : MonoBehaviour
     public Text MailCount;
     private List<Mail> Mails;
 
-    private int lastHour;
-    private int lastDay;
+   
     private List<Button> replies;
     private List<Image> bijlages;
 
@@ -42,10 +41,8 @@ public class DisplayMails : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(DesktopDateTime.Hour != lastHour || DesktopDateTime.Day != lastDay || manager.NewMailsAvailable)
-        {
-            lastDay = DesktopDateTime.Day;
-            lastHour = DesktopDateTime.Hour;
+        if(manager.NewMailsAvailable)
+        {            
             GetNewEmails();
             manager.NewMailsAvailable = false;
         }

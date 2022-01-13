@@ -12,6 +12,9 @@ public class MailManager : MonoBehaviour
 
     private GameManager manager;
 
+    private int lastHour;
+    private int lastDay;
+
     private void Awake()
     {
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -28,6 +31,16 @@ public class MailManager : MonoBehaviour
         }        
     }
 
+    void Update()
+    {
+        if (DesktopDateTime.Hour != lastHour || DesktopDateTime.Day != lastDay)
+        {
+            lastDay = DesktopDateTime.Day;
+            lastHour = DesktopDateTime.Hour;
+            CheckNewEmails();
+        }
+    }
+
 
     public List<Mail> CheckNewEmails()
     {
@@ -39,7 +52,12 @@ public class MailManager : MonoBehaviour
                 if (EmailAvailable(mail))
                 {
                     newMail.Add(mail);
-                    StartCoroutine(manager.NotificationCoroutine("Nieuwe email van " + mail.Sender + " betreft: " + mail.Subject, 1));
+                    NewMailsAvailable = true;
+                    if (!mail.IsNotified)
+                    {
+                        mail.IsNotified = true;
+                        StartCoroutine(manager.NotificationCoroutine("Nieuwe email van " + mail.Sender + " betreft: " + mail.Subject, 1));
+                    }
                 }
             }
         }

@@ -14,6 +14,7 @@ public class Mail
     public bool IsReceived;
     public bool IsRead;
     public bool IsReplied;
+    public bool IsNotified;
     public List<Reply> Replies;
     public Branch RequiredBranch;
     public int RequiredObjective;
