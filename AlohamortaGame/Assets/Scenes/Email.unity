@@ -4521,7 +4521,7 @@ MonoBehaviour:
     - Subject: 'RE: Fwd: Registratie overlijden 285867'
       Text: {fileID: 4900000, guid: 6afa31c9b9251054ebbdde27f6e76fd5, type: 3}
       RequiredNode: 0
-      ActivatesNodes: 0100000003000000
+      ActivatesNodes: 0100000004000000
       bijlages: []
     RequiredBranch: 0
     RequiredObjective: 0
