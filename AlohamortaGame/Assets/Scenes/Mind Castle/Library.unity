@@ -1489,6 +1489,8 @@ MonoBehaviour:
   puzzleCanvas: {fileID: 2116965744}
   artifacts:
   - {fileID: 245241283292893801, guid: 1dcc33f6221650c43a78901e46b3c341, type: 3}
+  - {fileID: 2471684181807268653, guid: 7a17a220fa3b4824293f3065e3832029, type: 3}
+  - {fileID: 3509591995843417084, guid: 3c2b4a33eacdbbb4d8bcea53009a8e91, type: 3}
   manager: {fileID: 0}
 --- !u!212 &1457613304
 SpriteRenderer:
