@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class DoorBehaviour : MonoBehaviour
 {
     public string Scene;
+    public bool Locked;
 
     private void OnMouseDown()
     {
         //change scene
-        SceneManager.LoadScene(Scene);
+        if (!Locked)
+        {
+            SceneManager.LoadScene(Scene);
+        }
     }
 }

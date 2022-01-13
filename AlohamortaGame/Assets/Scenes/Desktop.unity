@@ -2399,7 +2399,7 @@ MonoBehaviour:
     Name: CD
     Description: Los de puzzel op die het CD artifact opent
     Completed: 0
-    Hidden: 0
+    Hidden: 1
   - ID: 0
     Name: Intro
     Description: Lees de introductie email
@@ -2429,7 +2429,7 @@ MonoBehaviour:
     Name: Verjaardag vlaggen
     Description: Open de verjaardag vlaggetjes in Nora's Mind Castle
     Completed: 0
-    Hidden: 0
+    Hidden: 1
   - ID: 0
     Name: Time Traveller
     Description: Skip vooruit in de tijd door de PC in slaapstand te zetten

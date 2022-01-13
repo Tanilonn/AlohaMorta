@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 5c2c80e98f8cc484bb86812b6a88a6b4
   - enabled: 1
-    path: Assets/Scenes/Mind Castle/Living Room.unity
+    path: Assets/Scenes/Mind Castle/Hallway.unity
     guid: 93a3f320a44a2834ea7b99841537aef5
   - enabled: 1
     path: Assets/Scenes/Outside Mind Castle.unity
@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mind Castle/Library.unity
     guid: 4d9086f48a6876244a529680d026d0e4
+  - enabled: 1
+    path: Assets/Scenes/Mind Castle/Lobby.unity
+    guid: fde69847a314b9a469bd211ae4c7a351
   m_configObjects: {}
