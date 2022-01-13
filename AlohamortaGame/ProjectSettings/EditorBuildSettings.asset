@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 5c2c80e98f8cc484bb86812b6a88a6b4
+  - enabled: 1
     path: Assets/Scenes/Desktop.unity
     guid: 1b642e875ee0fb449b572463b2f598cc
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: d6fd7d3c2cfc2e0469bda3f1cce62d0d
-  - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: 5c2c80e98f8cc484bb86812b6a88a6b4
   - enabled: 1
     path: Assets/Scenes/Mind Castle/Hallway.unity
     guid: 93a3f320a44a2834ea7b99841537aef5
