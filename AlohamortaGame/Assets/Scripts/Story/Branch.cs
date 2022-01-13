@@ -8,4 +8,7 @@
     mamaRouwkaart,
     mamaRouwkaartPos,
     mamaRouwkaartMin,
+    papaRouwkaart,
+    papaRouwkaartPos,
+    papaRouwkaartMin
 }
