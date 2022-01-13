@@ -1759,6 +1759,20 @@ MonoBehaviour:
     ReadObjective: 0
     RepliedObjective: 0
     bijlages: []
+  - Subject: Rouwkaart Nora
+    Day: 1
+    Hour: 17
+    Sender: Dhr. Boris Meuleman
+    Text: {fileID: 4900000, guid: f4760017c3d235b42ae92ee8b583c31a, type: 3}
+    IsReceived: 0
+    IsRead: 0
+    IsReplied: 0
+    Replies: []
+    RequiredBranch: 5
+    RequiredObjective: 0
+    ReadObjective: 0
+    RepliedObjective: 0
+    bijlages: []
   NewMailsAvailable: 0
 --- !u!4 &629844837
 Transform:
