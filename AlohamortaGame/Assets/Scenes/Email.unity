@@ -1626,6 +1626,13 @@ MonoBehaviour:
         RequiredNode: 0
         ActivatesNodes: 
         bijlages: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
       RequiredBranch: 0
       RequiredObjective: 0
       ReadObjective: 0
@@ -1645,6 +1652,13 @@ MonoBehaviour:
       IsReplied: 0
       IsNotified: 0
       Replies: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
       RequiredBranch: 0
       RequiredObjective: 0
       ReadObjective: 0

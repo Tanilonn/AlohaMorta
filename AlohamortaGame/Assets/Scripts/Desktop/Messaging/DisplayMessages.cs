@@ -12,11 +12,9 @@ public class DisplayMessages : MonoBehaviour
     public Button ReplyButton;
     public Button ReplyPrefab;
     public GameObject MessagePrefab;
+    public GameObject ReplyMessagePrefab;
     public Image BijlagePrefab;
     public GameObject MessageField;
-
-    private List<MessageChain> Chains;
-
 
     private List<Button> replies;
     private List<Image> bijlages;
@@ -32,12 +30,10 @@ public class DisplayMessages : MonoBehaviour
         contacts = new List<Contact>();
         DisplayInbox();
 
-        Chains = manager.LoadMessages();
         GetNewMessages();
         replies = new List<Button>();
         bijlages = new List<Image>();
         messages = new List<GameObject>();
-        ToggleReplyButton(false);
 
 
         gameManager.CheckObjective(gameManager.Objectives[4]);
@@ -58,7 +54,6 @@ public class DisplayMessages : MonoBehaviour
         var m = manager.CheckNewMessages();
         if (m.Count > 0)
         {
-            Chains = manager.LoadMessages();
             ProcessNewMessages(m);
         }
     }
@@ -122,6 +117,7 @@ public class DisplayMessages : MonoBehaviour
 
     void DisplayContactChain(Contact c)
     {
+        HideReplies();
         HideMessages();
         foreach(var chain in c.Chains)
         {            
@@ -135,57 +131,54 @@ public class DisplayMessages : MonoBehaviour
                 {
                     var message = Instantiate(MessagePrefab, MessageField.transform);
                     messages.Add(message);
-                    message.transform.Find("Text").GetComponent<Text>().text = "bijlage";
+                    message.transform.Find("Panel").GetComponentInChildren<Text>().text = "bijlage";
                 }
             }
             foreach(var m in chain.Messages)
             {
                 var message = Instantiate(MessagePrefab, MessageField.transform);
                 messages.Add(message);
-                message.transform.Find("Text").GetComponent<Text>().text = m;
+                message.transform.Find("Panel").GetComponentInChildren<Text>().text = m;
             }
             //display reply if there is one
             if (chain.ChosenReply != null)
             {
                 foreach (var m in chain.ChosenReply.ReplyMessages)
                 {
-                    var reply = Instantiate(MessagePrefab, MessageField.transform);
-                    messages.Add(reply);
-                    reply.transform.Find("Text").GetComponent<Text>().text = m;
+                    var reply = Instantiate(ReplyMessagePrefab, MessageField.transform);
+                    messages.Add(reply);                    
+                    reply.transform.Find("Panel").GetComponentInChildren<Text>().text = m;
                 }
             }
             if (AvailableReplies(chain))
             {
                 var button = Instantiate(ReplyButton, MessageField.transform);
-                button.onClick.AddListener(delegate { DisplayReplies(chain); });
+                messages.Add(button.gameObject);
+                button.onClick.AddListener(delegate { DisplayReplies(chain, c); });
             }
         }        
     }
 
 
-    void DisplayReplies(MessageChain m)
+    void DisplayReplies(MessageChain m, Contact c)
     {
         HideReplies();
         foreach (var reply in manager.LoadReplies(m))
         {
             var button = Instantiate(ReplyPrefab, MessageField.transform);
             replies.Add(button);
-            
+
+            button.transform.Find("Text").GetComponent<Text>().text = reply.OptieNaam;
             //display reply optienaam
 
             button.onClick.AddListener(delegate { manager.SendReply(reply); });
             button.onClick.AddListener(delegate { HideReplies(); });
             button.onClick.AddListener(delegate { CheckReplyObjective(m, reply); });
-            button.onClick.AddListener(delegate { DisplaySentReply(reply); });
-            button.transform.SetAsFirstSibling();
+            button.onClick.AddListener(delegate { DisplayContactChain(c); });
         }
     }
 
-    private void DisplaySentReply(MessageReply reply)
-    {
-        //display reply
-
-    }
+    
 
     private void CheckReplyObjective(MessageChain m, MessageReply r)
     {
