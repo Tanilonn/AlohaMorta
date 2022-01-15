@@ -5,11 +5,13 @@ public class IconNotDisplay : MonoBehaviour
 {
     public GameObject MailNot;
     public GameObject ToDoNot;
+    public GameObject WhatNot;
 
     void Update()
     {
         DisplayMail();
         DisplayToDo();
+        DisplayWhat();
     }
 
     public void DisplayMail()
@@ -36,6 +38,20 @@ public class IconNotDisplay : MonoBehaviour
         {
             ToDoNot.gameObject.SetActive(true);
             ToDoNot.transform.Find("number").GetComponent<Text>().text = Notifications.ToDoUnread.ToString();
+
+        }
+    }
+
+    public void DisplayWhat()
+    {
+        if (Notifications.WhatsappUnread == 0)
+        {
+            WhatNot.gameObject.SetActive(false);
+        }
+        else
+        {
+            WhatNot.gameObject.SetActive(true);
+            WhatNot.transform.Find("number").GetComponent<Text>().text = Notifications.WhatsappUnread.ToString();
 
         }
     }

@@ -1567,6 +1567,104 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &662972400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662972402}
+  - component: {fileID: 662972401}
+  m_Layer: 0
+  m_Name: Message Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &662972401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662972400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56daf7294be7a1e4098c7a47d6da6a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Contacts:
+  - Name: Mama
+    Number: 
+    Photo: {fileID: 0}
+    Chains:
+    - Day: 1
+      Hour: 9
+      Sender: Mama
+      Messages:
+      - Hoi lieverd
+      - Hoe gaat het?
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies:
+      - Subject: 
+        OptieNaam: Goed
+        ReplyMessages:
+        - ja goed hoor, met jou?
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      - Subject: 
+        OptieNaam: Slecht
+        ReplyMessages:
+        - niet zo goed natuurlijk
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 0
+      RequiredObjective: 0
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+  - Name: Papa
+    Number: 
+    Photo: {fileID: 0}
+    Chains:
+    - Day: 1
+      Hour: 9
+      Sender: Papa
+      Messages:
+      - test
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies: []
+      RequiredBranch: 0
+      RequiredObjective: 0
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+  NewMessagesAvailable: 0
+--- !u!4 &662972402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662972400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2753.1904, y: 1642.3296, z: -9376.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &703030464
 GameObject:
   m_ObjectHideFlags: 0
