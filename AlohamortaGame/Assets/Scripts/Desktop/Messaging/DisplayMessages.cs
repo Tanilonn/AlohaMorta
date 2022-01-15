@@ -21,6 +21,8 @@ public class DisplayMessages : MonoBehaviour
     private List<Contact> contacts;
     private List<GameObject> messages;
 
+    private Contact currentContact;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,11 +53,15 @@ public class DisplayMessages : MonoBehaviour
 
     private void GetNewMessages()
     {
-        var m = manager.CheckNewMessages();
-        if (m.Count > 0)
+        foreach (var c in manager.Contacts)
         {
-            ProcessNewMessages(m);
+            var m = manager.CheckNewMessages(c);
+            if (m.Count > 0)
+            {
+                ProcessNewMessages(m, c);
+            }
         }
+       
     }
 
     private void DisplayInbox()
@@ -64,15 +70,23 @@ public class DisplayMessages : MonoBehaviour
         {            
             contacts.Add(c);
             DisplayContact(c);
+            manager.CheckNewMessages(c);
         }
     }
 
-    private void ProcessNewMessages(List<MessageChain> messages)
+    private void ProcessNewMessages(List<MessageChain> messages, Contact c)
     {
         foreach (var m in messages)
         {
             m.IsReceived = true;
-            DisplayUnreadContact(m);
+            if (c.Equals(currentContact))
+            {
+                DisplayContactChain(c);
+            }
+            else
+            {
+                DisplayUnreadContact(m);
+            }
         }
     }
 
@@ -93,7 +107,6 @@ public class DisplayMessages : MonoBehaviour
         Color unread = new Color32(131, 166, 255, 255);
 
         var button = transform.Find(m.Sender).GetComponent<Button>();        
-        button.onClick.AddListener(delegate { ReadMessage(button, m); });
 
         if (!m.IsRead)
         {
@@ -101,13 +114,14 @@ public class DisplayMessages : MonoBehaviour
         }
     }
 
-    void ReadMessage(Button button, MessageChain m)
+    void ReadMessage(MessageChain m)
     {
         if (!m.IsRead)
         {
             Color read = new Color32(209, 209, 209, 255);
             Notifications.WhatsappUnread--;
             m.IsRead = true;
+            var button = transform.Find(m.Sender).GetComponent<Button>();
 
             button.image.color = read;
         }
@@ -117,10 +131,16 @@ public class DisplayMessages : MonoBehaviour
 
     void DisplayContactChain(Contact c)
     {
+        currentContact = c;
         HideReplies();
         HideMessages();
-        foreach(var chain in c.Chains)
-        {            
+        var chains = manager.LoadMessages(c);
+        foreach(var chain in chains)
+        {
+            if (!chain.IsRead)
+            {
+                ReadMessage(chain);
+            }
             if (chain.ReadObjective != 0)
             {
                 gameManager.CheckObjective(gameManager.Objectives[chain.ReadObjective]);
@@ -219,10 +239,7 @@ public class DisplayMessages : MonoBehaviour
         messages.Clear();
     }
 
-    void ToggleReplyButton(bool state)
-    {
-        ReplyButton.gameObject.SetActive(state);
-    }
+    
 
     bool AvailableReplies(MessageChain m)
     {

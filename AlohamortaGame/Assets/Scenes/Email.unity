@@ -1602,29 +1602,32 @@ MonoBehaviour:
     Photo: {fileID: 0}
     Chains:
     - Day: 1
-      Hour: 9
+      Hour: 17
       Sender: Mama
       Messages:
       - Hoi lieverd
-      - Hoe gaat het?
+      - Echt heel fijn dat jij de rouwkaart voor Nora wilt kiezen en ik weet zeker
+        dat zij dat ook had gevonden.
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
       IsNotified: 0
       Replies:
       - Subject: 
-        OptieNaam: Goed
+        OptieNaam: Ik hoop het.
         ReplyMessages:
-        - ja goed hoor, met jou?
+        - "Hoi mama, ik hoop het, maar wat als ik haar misschien toch niet meer zo
+          goed kende\u2026"
         RequiredNode: 0
-        ActivatesNodes: 
+        ActivatesNodes: 0500000006000000
         bijlages: []
       - Subject: 
-        OptieNaam: Slecht
+        OptieNaam: Het is het minste wat ik kan doen.
         ReplyMessages:
-        - niet zo goed natuurlijk
+        - Tuurlijk, het is het minste wat ik kan doen nu, jullie hebben al genoeg
+          op jullie bord.
         RequiredNode: 0
-        ActivatesNodes: 
+        ActivatesNodes: 0500000007000000
         bijlages: []
       ChosenReply:
         Subject: 
@@ -1638,15 +1641,12 @@ MonoBehaviour:
       ReadObjective: 0
       RepliedObjective: 0
       bijlages: []
-  - Name: Papa
-    Number: 
-    Photo: {fileID: 0}
-    Chains:
     - Day: 1
       Hour: 9
-      Sender: Papa
+      Sender: Mama
       Messages:
-      - test
+      - "Het komt goed, lieverd, zo moet je niet denken, jullie waren zo lang twee
+        handen op \xE9\xE9n buik."
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
@@ -1659,7 +1659,118 @@ MonoBehaviour:
         RequiredNode: 0
         ActivatesNodes: 
         bijlages: []
-      RequiredBranch: 0
+      RequiredBranch: 6
+      RequiredObjective: 0
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 9
+      Sender: Mama
+      Messages:
+      - Lief dat je daar aan denkt, dit is voor ons allemaal zwaar.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 7
+      RequiredObjective: 0
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+  - Name: Papa
+    Number: 
+    Photo: {fileID: 0}
+    Chains:
+    - Day: 1
+      Hour: 17
+      Sender: Papa
+      Messages:
+      - Goed gedaan, lieverd, wat een prachtige kaart.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies:
+      - Subject: 
+        OptieNaam: Maar wat als...?
+        ReplyMessages:
+        - "Ik hoop dat zij dat ook zo zou vinden. Wat als ze zelf een heel ander
+          idee had? Of misschien had ze er zelf al een ontworpen? Je weet hoe ze
+          was\u2026"
+        RequiredNode: 0
+        ActivatesNodes: 080000000a000000
+        bijlages: []
+      - Subject: 
+        OptieNaam: Denk je?
+        ReplyMessages:
+        - Ik vind het fijn om te horen dat jullie dat ook vinden. Denk je dat zij
+          dezelfde gekozen zou hebben?
+        RequiredNode: 0
+        ActivatesNodes: 080000000a000000
+        bijlages: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 2
+      RequiredObjective: 11
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Papa
+      Messages:
+      - Dat denk ik wel, en mama ook. We zijn heel benieuwd naar de rest van de kaart.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 9
+      RequiredObjective: 0
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Papa
+      Messages:
+      - "Dat weten we zeker, lotje. Maar het is nu even niet anders en we weten zeker
+        dat je ongeacht iets maakt wat \xE9cht Nora was, en ze zou trots op je zijn
+        geweest."
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 10
       RequiredObjective: 0
       ReadObjective: 0
       RepliedObjective: 0
@@ -4717,63 +4828,6 @@ MonoBehaviour:
     ReadObjective: 0
     RepliedObjective: 0
     bijlages: []
-  - Subject: Hoi Lieverd
-    Day: 1
-    Hour: 17
-    Sender: Mama
-    Text: {fileID: 4900000, guid: 04507302494dd5b4fb064ddb320792fb, type: 3}
-    IsReceived: 0
-    IsRead: 0
-    IsReplied: 0
-    IsNotified: 0
-    Replies:
-    - Subject: Ik hoop het
-      OptieNaam: Ik hoop het.
-      Text: {fileID: 4900000, guid: e2d6386c344576149b3c335cced2db3e, type: 3}
-      RequiredNode: 0
-      ActivatesNodes: 0500000006000000
-      bijlages: []
-    - Subject: Het is het minste wat ik kan doen
-      OptieNaam: Het is het minste wat ik kan doen.
-      Text: {fileID: 4900000, guid: bf2fd37bc6994ba40828f5fcb8d52b3e, type: 3}
-      RequiredNode: 0
-      ActivatesNodes: 0500000007000000
-      bijlages: []
-    RequiredBranch: 0
-    RequiredObjective: 0
-    ReadObjective: 0
-    RepliedObjective: 0
-    bijlages: []
-  - Subject: 'RE: Ik hoop het'
-    Day: 1
-    Hour: 17
-    Sender: Mama
-    Text: {fileID: 4900000, guid: 2c6bacdd0684ddc4a95b350d2ded6b07, type: 3}
-    IsReceived: 0
-    IsRead: 0
-    IsReplied: 0
-    IsNotified: 0
-    Replies: []
-    RequiredBranch: 6
-    RequiredObjective: 1
-    ReadObjective: 0
-    RepliedObjective: 0
-    bijlages: []
-  - Subject: 'RE: Het is het minste wat ik kan doen'
-    Day: 1
-    Hour: 17
-    Sender: Mama
-    Text: {fileID: 4900000, guid: 40007484af013654d83aeb956afe976f, type: 3}
-    IsReceived: 0
-    IsRead: 0
-    IsReplied: 0
-    IsNotified: 0
-    Replies: []
-    RequiredBranch: 7
-    RequiredObjective: 0
-    ReadObjective: 0
-    RepliedObjective: 0
-    bijlages: []
   - Subject: Rouwkaart Nora
     Day: 1
     Hour: 17
@@ -4839,63 +4893,6 @@ MonoBehaviour:
     IsNotified: 0
     Replies: []
     RequiredBranch: 2
-    RequiredObjective: 0
-    ReadObjective: 0
-    RepliedObjective: 0
-    bijlages: []
-  - Subject: Goed gedaan
-    Day: 1
-    Hour: 18
-    Sender: Papa
-    Text: {fileID: 4900000, guid: fe461ed1a9d06974f928e0f99fcc1791, type: 3}
-    IsReceived: 0
-    IsRead: 0
-    IsReplied: 0
-    IsNotified: 0
-    Replies:
-    - Subject: Denk je?
-      OptieNaam: Denk je?
-      Text: {fileID: 4900000, guid: 1624cef72b816114a8572b2e44576246, type: 3}
-      RequiredNode: 0
-      ActivatesNodes: 0800000009000000
-      bijlages: []
-    - Subject: Maar wat als...?
-      OptieNaam: Maar wat als...?
-      Text: {fileID: 4900000, guid: 96ab0f548d2a02e49ab49242abe491c4, type: 3}
-      RequiredNode: 0
-      ActivatesNodes: 0800000009000000
-      bijlages: []
-    RequiredBranch: 2
-    RequiredObjective: 11
-    ReadObjective: 0
-    RepliedObjective: 0
-    bijlages: []
-  - Subject: 'Re: denk je?'
-    Day: 1
-    Hour: 18
-    Sender: Papa
-    Text: {fileID: 4900000, guid: 5bbcd586066363741a977699455f9fb7, type: 3}
-    IsReceived: 0
-    IsRead: 0
-    IsReplied: 0
-    IsNotified: 0
-    Replies: []
-    RequiredBranch: 9
-    RequiredObjective: 0
-    ReadObjective: 0
-    RepliedObjective: 0
-    bijlages: []
-  - Subject: 'Re: Maar wat als...?'
-    Day: 1
-    Hour: 18
-    Sender: Papa
-    Text: {fileID: 4900000, guid: 3b83c540cb9c795418e3046f52b8f0a0, type: 3}
-    IsReceived: 0
-    IsRead: 0
-    IsReplied: 0
-    IsNotified: 0
-    Replies: []
-    RequiredBranch: 10
     RequiredObjective: 0
     ReadObjective: 0
     RepliedObjective: 0

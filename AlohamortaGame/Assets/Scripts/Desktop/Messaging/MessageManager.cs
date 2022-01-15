@@ -68,6 +68,31 @@ public class MessageManager : MonoBehaviour
         return newMessage;
     }
 
+    public List<MessageChain> CheckNewMessages(Contact c)
+    {
+        var newMessage = new List<MessageChain>();
+        
+            foreach (var m in c.Chains)
+            {
+                if (((m.Day == DesktopDateTime.Day && m.Hour <= DesktopDateTime.Hour) || (m.Day < DesktopDateTime.Day)) && !m.IsReceived)
+                {
+                    if (ChainAvailable(m))
+                    {
+                        newMessage.Add(m);
+                        NewMessagesAvailable = true;
+                        if (!m.IsNotified)
+                        {
+                            m.IsNotified = true;
+                            Notifications.WhatsappUnread++;
+                            StartCoroutine(manager.NotificationCoroutine("Nieuw bericht van " + m.Sender, 1));
+                        }
+                    }
+                }
+            }
+        
+        return newMessage;
+    }
+
     public bool ChainAvailable(MessageChain chain)
     {
         if ((chain.RequiredBranch == Branch.none || Story.Branches.Contains(chain.RequiredBranch)) &&
@@ -91,6 +116,17 @@ public class MessageManager : MonoBehaviour
                 messages.Add(m);
             }
         }
+        return messages;
+    }
+
+    public List<MessageChain> LoadMessages(Contact c)
+    {
+        var messages = new List<MessageChain>();
+            foreach (var m in c.Chains.FindAll(m => m.IsReceived == true))
+            {
+                messages.Add(m);
+            }
+        
         return messages;
     }
 
@@ -120,6 +156,7 @@ public class MessageManager : MonoBehaviour
         }
         if (CheckNewMessages().Count > 0)
         {
+            //if you want everything to update right away check for new emails here too!
             NewMessagesAvailable = true;
         }
     }

@@ -109,6 +109,7 @@ public class MailManager : MonoBehaviour
         }
         if (CheckNewEmails().Count > 0)
         {
+            //if you want everything to update right away check for new text messages here too!
             NewMailsAvailable = true;
         }
     }
