@@ -27,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
         //if too far left only allow right input
         else if (transform.position.x <= -screenWidth)
         {
-            transform.position = new Vector2(-screenWidth, 0);
-
             if (Input.GetAxis("Mouse X") > 0)
             {
                 Move();
@@ -37,8 +35,6 @@ public class PlayerMovement : MonoBehaviour
         //if too far right only allow left input
         else if (transform.position.x >= screenWidth)
         {
-            transform.position = new Vector2(screenWidth, 0);
-
             if (Input.GetAxis("Mouse X") < 0)
             {
                 Move();
@@ -50,6 +46,10 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         movement = new Vector2(Input.GetAxisRaw("Mouse X"), 0);
-        transform.Translate(movement * (Mathf.Abs(Input.GetAxisRaw("Mouse X")) * speed) * Time.deltaTime);
+        //only allow movement if it doesn't take you off screen
+        if(transform.position.x + movement.x <= screenWidth && transform.position.x + movement.x >= -screenWidth)
+        {
+            transform.Translate(movement * (Mathf.Abs(Input.GetAxisRaw("Mouse X")) * speed) * Time.deltaTime);
+        }
     }
 }
