@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         }
         Notifications.ToDoUnread++;
         objective.Completed = true;
-        StartCoroutine(NotificationCoroutine("You completed the objective: " + objective.Name + "!", 0));
+        StartCoroutine(NotificationCoroutine("Je hebt een doel voltooid: " + objective.Name + "!", 0));
     }
 
     public IEnumerator NotificationCoroutine(string notification, int sprite)
