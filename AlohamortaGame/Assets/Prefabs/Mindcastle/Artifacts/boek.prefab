@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245241283292893801}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: -3.12, z: 0}
-  m_LocalScale: {x: 0.157341, y: 0.16788504, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 88fbe933ab62772408014da81ff713ae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 859c903677c2423438511be428e43b45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,7 +100,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12, y: 8.15}
+    oldSize: {x: 15.9, y: 7.68}
     newSize: {x: 5.5, y: 5.58}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
       Het is een van de mooiste verhalen die ik ken. Nu me opa er niet meer is fysiek
       is zijn liefde nog steeds overal terug te zien net als de prachtige roos. Nu
       mijn favoriete witte roos. '
-    Image: {fileID: 21300000, guid: 88fbe933ab62772408014da81ff713ae, type: 3}
+    Image: {fileID: 21300000, guid: 1281b5b54e981af4eb8692857bf187de, type: 3}
     Sound: {fileID: 8300000, guid: 90827ac6228204f438ebf0ebab7a9cdb, type: 3}
   cursor: {fileID: 2800000, guid: c0b6eea0e8a81ff4ea53fe606ba093b8, type: 3}
   puzzle:
