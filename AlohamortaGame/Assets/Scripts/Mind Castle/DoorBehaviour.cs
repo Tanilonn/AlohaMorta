@@ -19,7 +19,6 @@ public class DoorBehaviour : MonoBehaviour
 
         if (UnlockObjective != 0 && manager.Objectives[UnlockObjective].Completed)
         {
-            Debug.Log(manager.Objectives[UnlockObjective].Name);
             Unlock();
         }
     }

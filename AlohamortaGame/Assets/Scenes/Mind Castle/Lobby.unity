@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 350891852}
   - component: {fileID: 350891851}
   m_Layer: 0
-  m_Name: background
+  m_Name: ' artifact manager background'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
