@@ -86,6 +86,19 @@ public class TriggerMemory : MonoBehaviour
         manager.canvas.image.preserveAspect = true;
         manager.canvas.audioPlayer.clip = memory.Sound;
         manager.canvas.audioPlayer.Play();
+        var button = manager.canvas.canvas.gameObject.transform.Find("CloseButton").GetComponent<Button>();
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(delegate { CloseMemory(); });
+
+
+    }
+
+    public void CloseMemory()
+    {
+        if (!string.IsNullOrEmpty(memory.noraComment))
+        {
+            StartCoroutine(gameManager.NoraNotificationCoroutine(memory.noraComment));
+        }
     }
 
     public void OnPuzzleSolved()

@@ -9,5 +9,6 @@ public class Memory
     public string Text;
     public Sprite Image;
     public AudioClip Sound;
+    public string noraComment;
 }
 

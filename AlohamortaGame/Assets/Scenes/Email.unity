@@ -1553,6 +1553,8 @@ MonoBehaviour:
     type: 3}
   NotificationConPrefab: {fileID: 6029275751725959198, guid: 299d0c0740b5d6943acd6e8a7a74e3e2,
     type: 3}
+  NoraNotifPrefab: {fileID: 8980293534863456239, guid: aef5bcd18f9ba184eb43a6febb372e10,
+    type: 3}
 --- !u!4 &644268835
 Transform:
   m_ObjectHideFlags: 0

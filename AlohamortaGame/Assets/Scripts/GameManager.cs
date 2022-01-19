@@ -10,7 +10,10 @@ public class GameManager : MonoBehaviour
     public List<Sprite> NotificationSprites;
     public GameObject NotificationPrefab;
     public GameObject NotificationConPrefab;
+    public GameObject NoraNotifPrefab;
     private GameObject NotificationContainer;
+    private GameObject NoraNotificationContainer;
+
 
 
     private void Awake()
@@ -64,6 +67,26 @@ public class GameManager : MonoBehaviour
             
             Destroy(n);           
         }        
+    }
+
+    public IEnumerator NoraNotificationCoroutine(string notification)
+    {
+        Canvas canvas = (Canvas)FindObjectOfType(typeof(Canvas));
+        if (canvas != null)
+        {
+            if (NoraNotificationContainer == null)
+            {
+                NoraNotificationContainer = Instantiate(NoraNotifPrefab, canvas.transform);
+            }
+            var n = Instantiate(NotificationPrefab, NoraNotificationContainer.transform);
+            n.transform.Find("Text").GetComponent<Text>().text = notification;
+            n.transform.Find("Icon").GetComponent<Image>().sprite = null;
+
+            //yield on a new YieldInstruction that waits for 5 seconds.
+            yield return new WaitForSeconds(20);
+
+            Destroy(n);
+        }
     }
 
     public void CheckObjective(Objective objective)
