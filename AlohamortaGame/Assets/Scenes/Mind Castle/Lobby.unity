@@ -212,6 +212,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1287596305}
+  - {fileID: 576543542}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -755,6 +756,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &576543541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6577832099397995180, guid: 3c174067c48916f47a11071a09ff393f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6577832099965489561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &576543542 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6577832099965489561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620801798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +1950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464997790}
   - component: {fileID: 1464997789}
+  - component: {fileID: 1464997791}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -1970,6 +1984,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464997791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464997788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565add16bd85177499a0a338b9971e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Textbox: {fileID: 576543541}
 --- !u!1 &1465281118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,3 +2837,194 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2051605076}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6577832099965489561
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 30557005}
+    m_Modifications:
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Name
+      value: Nora
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.data[0]
+      value: Dag lieve zus
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.data[1]
+      value: 'Wanneer je dit leest ben ik er helaas niet meer. Maar deze plek, dit
+        kasteel, is mijn laatste cadeau aan jou, en onze familie. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.data[2]
+      value: In dit kasteel zal je altijd het gevoel hebben dat ik nog bij je ben,
+        hier leven mijn herinneringen voort. Hier kan je keer op keer opnieuw ervaren
+        wie ik was, hoe ik mijn leven leidde, en welke stiekeme streken ik allemaal
+        uithaalde. Mocht je ooit het gore lef hebben om ook maar iets over mij te
+        vergeten, haha.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.data[3]
+      value: 'Daarbij vraag jij je misschien af waarom ik destijds besloten heb om
+        mee te doen aan dit project? Aan deze rare CHIP onderneming. Nou, het leek
+        mij simpelweg interessant om te kijken of het zou werken. Waar ik achteraf
+        misschien beter over had moeten nadenken gezien ik zelf het resultaat niet
+        kan zien... Of toch wel? Oeeeeh, spooky. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.data[4]
+      value: "Misschien heb je er functioneel gezien nog iets aan, mocht je met vragen
+        of taken zitten wanneer ik er niet meer ben? Ik weet het verder ook niet
+        zo goed, ik hoop eigenlijk dat je dit \xFCberhaupt nooit te lezen krijgt.
+        Maar mocht dat toch zo zijn, gecondoleerd met het verlies van mij, je meest
+        lieve, fantastische, en favoriete zusje ooit."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.data[5]
+      value: 'Sorry, misschien moet ik deze tekst toch wat serieuzer nemen, dus ter
+        afsluiting: Wil je tegen papa en mama zeggen dat ik altijd ontzettend veel
+        van jullie heb gehouden? En dat altijd zal blijven doen, ongeacht wat het
+        hiernamaals inhoud.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.data[6]
+      value: Ondanks dat we elkaar niet meer fysiek zullen zien, zal ik jullie nooit
+        verlaten.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: Monologue.Array.data[7]
+      value: Liefs, Nora
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995180, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_Name
+      value: Textbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995180, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3c174067c48916f47a11071a09ff393f, type: 3}

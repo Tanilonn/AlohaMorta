@@ -19,7 +19,6 @@ public class ArtifactManager : MonoBehaviour
         }
 
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        manager.CheckObjective(manager.Objectives[3]);
     }
 
     // Update is called once per frame
