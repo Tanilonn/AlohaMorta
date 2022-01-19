@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LobbyManager : MonoBehaviour
+public class NoraRoom : MonoBehaviour
 {
     private GameManager manager;
     public GameObject Textbox;
@@ -13,10 +13,9 @@ public class LobbyManager : MonoBehaviour
     {
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
 
-        if (!manager.Objectives[Objective].Completed)
+        if (manager.Objectives[Objective].Completed)
         {
             Textbox.SetActive(true);
-            manager.CheckObjective(manager.Objectives[3]);
         }
     }
 

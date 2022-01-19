@@ -397,6 +397,11 @@ PrefabInstance:
       objectReference: {fileID: 279336710}
     - target: {fileID: 7544285236518794263, guid: b80f3810386450f4eb6394d0086056e1,
         type: 3}
+      propertyPath: Scene
+      value: Nora Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544285236518794263, guid: b80f3810386450f4eb6394d0086056e1,
+        type: 3}
       propertyPath: Locked
       value: 1
       objectReference: {fileID: 0}
@@ -2029,6 +2034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Textbox: {fileID: 576543541}
+  Objective: 3
 --- !u!1 &1465281118
 GameObject:
   m_ObjectHideFlags: 0
