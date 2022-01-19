@@ -279,6 +279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: door
       objectReference: {fileID: 0}
+    - target: {fileID: 7544285236518794259, guid: b80f3810386450f4eb6394d0086056e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7544285236518794260, guid: b80f3810386450f4eb6394d0086056e1,
         type: 3}
       propertyPath: m_RootOrder
@@ -350,6 +355,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f30803c5ace189143836ac57e38edc16,
         type: 3}
+    - target: {fileID: 7544285236518794261, guid: b80f3810386450f4eb6394d0086056e1,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7544285236518794262, guid: b80f3810386450f4eb6394d0086056e1,
         type: 3}
       propertyPath: m_Size.x
@@ -382,14 +392,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7544285236518794263, guid: b80f3810386450f4eb6394d0086056e1,
         type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 279336710}
+    - target: {fileID: 7544285236518794263, guid: b80f3810386450f4eb6394d0086056e1,
+        type: 3}
       propertyPath: Locked
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544285236518794263, guid: b80f3810386450f4eb6394d0086056e1,
+        type: 3}
+      propertyPath: unlocked
+      value: 
+      objectReference: {fileID: 21300000, guid: 0d7365dc04fbba04897daea58d0964eb,
+        type: 3}
+    - target: {fileID: 7544285236518794263, guid: b80f3810386450f4eb6394d0086056e1,
+        type: 3}
+      propertyPath: UnlockObjective
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80f3810386450f4eb6394d0086056e1, type: 3}
 --- !u!4 &279336709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7544285236518794260, guid: b80f3810386450f4eb6394d0086056e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 279336708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &279336710 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7544285236518794261, guid: b80f3810386450f4eb6394d0086056e1,
     type: 3}
   m_PrefabInstance: {fileID: 279336708}
   m_PrefabAsset: {fileID: 0}
