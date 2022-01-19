@@ -10,15 +10,16 @@ public class DisplayMails : MonoBehaviour
     public Button ButtonPrefab;
     public Button ReplyButton;
     public Button ReplyPrefab;
-    public Image BijlagePrefab;
+    public Button BijlagePrefab;
     public GameObject MailTextField;
     public GameObject BijlageVeld;
+    public Image BijlagePopUp;
     public Text MailCount;
     private List<Mail> Mails;
 
    
     private List<Button> replies;
-    private List<Image> bijlages;
+    private List<Button> bijlages;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class DisplayMails : MonoBehaviour
         DisplayInbox();
         GetNewEmails();
         replies = new List<Button>();
-        bijlages = new List<Image>();
+        bijlages = new List<Button>();
         ToggleReplyButton(false);
 
         
@@ -122,7 +123,8 @@ public class DisplayMails : MonoBehaviour
             foreach (var bijlage in mail.bijlages)
             {
                 var b = Instantiate(BijlagePrefab, BijlageVeld.transform);
-                b.sprite = bijlage;
+                b.image.sprite = bijlage;
+                b.onClick.AddListener(delegate { DisplayBigBijlage(bijlage); });
                 bijlages.Add(b);
             }
         }
@@ -132,6 +134,12 @@ public class DisplayMails : MonoBehaviour
         {
             gameManager.CheckObjective(gameManager.Objectives[mail.ReadObjective]);
         }
+    }
+
+    void DisplayBigBijlage(Sprite sprite)
+    {
+        BijlagePopUp.gameObject.SetActive(true);
+        BijlagePopUp.sprite = sprite;
     }
    
 
@@ -154,7 +162,7 @@ public class DisplayMails : MonoBehaviour
                 foreach (var bijlage in reply.bijlages)
                 {
                     var b = Instantiate(BijlagePrefab, button.transform);
-                    b.sprite = bijlage;                    
+                    b.image.sprite = bijlage;                    
                 }
             }
             
@@ -180,7 +188,7 @@ public class DisplayMails : MonoBehaviour
             foreach (var bijlage in reply.bijlages)
             {
                 var b = Instantiate(BijlagePrefab, BijlageVeld.transform);
-                b.sprite = bijlage;
+                b.image.sprite = bijlage;
                 bijlages.Add(b);
             }
         }
