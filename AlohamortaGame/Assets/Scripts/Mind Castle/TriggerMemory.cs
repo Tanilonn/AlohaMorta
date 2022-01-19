@@ -83,6 +83,7 @@ public class TriggerMemory : MonoBehaviour
         manager.canvas.title.text = memory.Title;
         manager.canvas.text.text = memory.Text;
         manager.canvas.image.sprite = memory.Image;
+        manager.canvas.image.preserveAspect = true;
         manager.canvas.audioPlayer.clip = memory.Sound;
         manager.canvas.audioPlayer.Play();
     }
