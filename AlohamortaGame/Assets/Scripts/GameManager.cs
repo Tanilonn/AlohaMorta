@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public List<Objective> Objectives = new List<Objective>();
     public List<Sprite> NotificationSprites;
     public GameObject NotificationPrefab;
+    public GameObject NoraNotificationPrefab;
     public GameObject NotificationConPrefab;
     public GameObject NoraNotifPrefab;
     private GameObject NotificationContainer;
@@ -74,18 +75,16 @@ public class GameManager : MonoBehaviour
         Canvas canvas = (Canvas)FindObjectOfType(typeof(Canvas));
         if (canvas != null)
         {
-            if (NoraNotificationContainer == null)
-            {
-                NoraNotificationContainer = Instantiate(NoraNotifPrefab, canvas.transform);
-            }
-            var n = Instantiate(NotificationPrefab, NoraNotificationContainer.transform);
+            
+            NoraNotificationContainer = Instantiate(NoraNotifPrefab, canvas.transform);
+            
+            var n = Instantiate(NoraNotificationPrefab, NoraNotificationContainer.transform.Find("container").transform);
             n.transform.Find("Text").GetComponent<Text>().text = notification;
-            n.transform.Find("Icon").GetComponent<Image>().sprite = null;
 
             //yield on a new YieldInstruction that waits for 5 seconds.
-            yield return new WaitForSeconds(20);
+            yield return new WaitForSeconds(5);
 
-            Destroy(n);
+            Destroy(NoraNotificationContainer);
         }
     }
 

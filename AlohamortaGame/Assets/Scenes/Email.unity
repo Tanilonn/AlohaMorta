@@ -1055,9 +1055,9 @@ RectTransform:
   m_Father: {fileID: 1481158913}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 330, y: -440}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 330, y: 0}
   m_SizeDelta: {x: 600, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &581961326
@@ -1551,9 +1551,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 80ce33c1b6a0fb64d82f4ef2906ee201, type: 3}
   NotificationPrefab: {fileID: 8067836376100414737, guid: 5f1fb38d3bfcdd5409fb51f17e8676e4,
     type: 3}
+  NoraNotificationPrefab: {fileID: 4424848547432045628, guid: 9fec292caa5667a4d9382de8e647ab76,
+    type: 3}
   NotificationConPrefab: {fileID: 6029275751725959198, guid: 299d0c0740b5d6943acd6e8a7a74e3e2,
     type: 3}
-  NoraNotifPrefab: {fileID: 8980293534863456239, guid: aef5bcd18f9ba184eb43a6febb372e10,
+  NoraNotifPrefab: {fileID: 3314114839057769634, guid: 16d2e8b36b0051543ab96041d32edb08,
     type: 3}
 --- !u!4 &644268835
 Transform:
