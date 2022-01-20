@@ -3614,7 +3614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectivePrefab: {fileID: 2938216878255128486, guid: de224d05b58b1434d8c36175ef397f66,
     type: 3}
-  DoneLijst: {fileID: 18840277}
+  Donelijst: {fileID: 18840277}
   TODOLijst: {fileID: 1466680848}
 --- !u!1 &1493970493
 GameObject:
