@@ -151,14 +151,14 @@ public class DisplayMessages : MonoBehaviour
                 {
                     var message = Instantiate(MessagePrefab, MessageField.transform);
                     messages.Add(message);
-                    message.transform.Find("Panel").GetComponentInChildren<Text>().text = "bijlage";
+                    message.transform.Find("PaEmma").GetComponentInChildren<Text>().text = "bijlage";
                 }
             }
             foreach(var m in chain.Messages)
             {
                 var message = Instantiate(MessagePrefab, MessageField.transform);
                 messages.Add(message);
-                message.transform.Find("Panel").GetComponentInChildren<Text>().text = m;
+                message.transform.Find("PaEmma").GetComponentInChildren<Text>().text = m;
             }
             //display reply if there is one
             if (chain.ChosenReply != null)
@@ -167,7 +167,7 @@ public class DisplayMessages : MonoBehaviour
                 {
                     var reply = Instantiate(ReplyMessagePrefab, MessageField.transform);
                     messages.Add(reply);                    
-                    reply.transform.Find("Panel").GetComponentInChildren<Text>().text = m;
+                    reply.transform.Find("PaEmma").GetComponentInChildren<Text>().text = m;
                 }
             }
             if (AvailableReplies(chain))

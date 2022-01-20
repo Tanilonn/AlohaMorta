@@ -8,7 +8,7 @@ public class DisplayObjectivesBehaviour : MonoBehaviour
 {
     public Button ObjectivePrefab;
     private GameManager manager;
-    public Transform DoneLijst;
+    public Transform DoEmmaijst;
     public Transform TODOLijst;
 
     // Start is called before the first frame update
@@ -39,7 +39,7 @@ public class DisplayObjectivesBehaviour : MonoBehaviour
         {            
             if (objective.Completed)
             {
-                var obj = Instantiate(ObjectivePrefab, DoneLijst);
+                var obj = Instantiate(ObjectivePrefab, DoEmmaijst);
                 obj.transform.Find("Objective").GetComponent<Text>().text = objective.Name;
                 obj.transform.Find("Text").GetComponent<Text>().text = objective.Description;
                 obj.image.color = green;
