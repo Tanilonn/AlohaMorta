@@ -376,7 +376,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 880, y: 0}
+  m_SizeDelta: {x: 630, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &3989523602688875642
 CanvasRenderer:
@@ -736,10 +736,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hier komt het verhaal van de herinnering.Hier komt het verhaal van de herinnering.Hier
-    komt het verhaal van de herinnering.Hier komt het verhaal van de herinnering.Hier
-    komt het verhaal van de herinnering.Hier komt het verhaal van de herinnering.Hier
-    komt het verhaal van de herinnering.Hier komt het verhaal van de herinnering.
+  m_Text: 'Hier komt het verhaal van de herinnering.Hier komt het verhaal van de
+    herinnering.Hier komt het verhaal van de herinnering.Hier komt het verhaal van
+    de herinnering.
+
+
+    Hier komt het verhaal van de herinnering.Hier komt het
+    verhaal van de herinnering.Hier komt het verhaal van de herinnering.Hier komt
+    het verhaal van de herinnering.'
 --- !u!1 &3989523602970164983
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +781,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 0}
+  m_SizeDelta: {x: 650, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &3989523602970164938
 CanvasRenderer:

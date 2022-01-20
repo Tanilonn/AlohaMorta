@@ -125,19 +125,19 @@ MonoBehaviour:
   memory:
     name: Boek
     Title: Boek
-    Text: 'Het is als de dag van gisteren dat ik in bed lag en mams binnen kwam met
-      haar grote boek, BLOEMBOEK; schreeuwde ik dan altijd in blijheid.  Als het
-      boek open gaat dan begint de magie en vouwt er zo een bloem omhoog. Haar verhalen
-      waren dan ook zo grappig bij elke bloem. Maar eentje blijft me dan altijd bij.
-      De bloem van de liefde. Een roos, Mams vertelde altijd over het verhaal van
-      hoe opa mijn oma verraste met een boeket rozen en haar vertelde dat zijn liefde
-      voor haar net zolang duurde tot de laatste bloem in het boeket dood ging. de
-      bloemen gingen langzaam dood maar een bloem die bleef staan. Het was een witte
-      roos. Het duurde even voor oma om erachter te komen dat het niet een echte
-      was maar wat ze wel wist is dat de bloem voor altijd bij haar zou blijven.
-      Het is een van de mooiste verhalen die ik ken. Nu me opa er niet meer is fysiek
-      is zijn liefde nog steeds overal terug te zien net als de prachtige roos. Nu
-      mijn favoriete witte roos. '
+    Text: "Het is als de dag van gisteren dat ik in bed lag en mams binnen kwam met
+      haar grote boek, BLOEMBOEK; schreeuwde ik dan altijd in blijheid.  \n\nAls
+      het boek open gaat dan begint de magie en vouwt er zo een bloem omhoog. Haar
+      verhalen waren dan ook zo grappig bij elke bloem. Maar eentje blijft me dan
+      altijd bij. \n\nDe bloem van de liefde. Een roos, Mams vertelde altijd over
+      het verhaal van hoe opa mijn oma verraste met een boeket rozen en haar vertelde
+      dat zijn liefde voor haar net zolang duurde tot de laatste bloem in het boeket
+      dood ging. de bloemen gingen langzaam dood maar een bloem die bleef staan.
+      Het was een witte roos. \n\nHet duurde even voor oma om erachter te komen dat
+      het niet een echte was maar wat ze wel wist is dat de bloem voor altijd bij
+      haar zou blijven. Het is een van de mooiste verhalen die ik ken. \n\nNu me
+      opa er niet meer is fysiek is zijn liefde nog steeds overal terug te zien net
+      als de prachtige roos. Nu mijn favoriete witte roos. "
     Image: {fileID: 21300000, guid: 1281b5b54e981af4eb8692857bf187de, type: 3}
     Sound: {fileID: 8300000, guid: 90827ac6228204f438ebf0ebab7a9cdb, type: 3}
     noraComment: Opa... nu zijn we weer samen.
