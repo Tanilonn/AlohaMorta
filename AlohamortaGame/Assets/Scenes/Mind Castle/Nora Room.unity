@@ -163,7 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2269a268fa9333b4caab8e085463651b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textbox: {fileID: 0}
   Objective: 11
 --- !u!4 &27071829
 Transform:
@@ -214,8 +213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 10}
-  m_SizeDelta: {x: -100, y: -120}
+  m_AnchoredPosition: {x: 0, y: -61.7}
+  m_SizeDelta: {x: -100, y: -340.8977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &49760498
 MonoBehaviour:
@@ -238,7 +237,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 52f97f4892885774d9a027a03143d77c, type: 3}
-    m_FontSize: 20
+    m_FontSize: 16
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -264,23 +263,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Subtitle: {fileID: 49760498}
   Subtitles:
-  - Sub: "Nel, jij bent het h\xE8?"
+  - Sub: Hallo
     Duration: 4
-  - Sub: Helpt het je, om hier te zijn? Ik hoop het...
+  - Sub: Meer tekst
     Duration: 5
-  - Sub: Het lijkt me zo lastig voor je.
+  - Sub: Nog meer tekst
     Duration: 3
-  - Sub: Ik mis je.
+  - Sub: Dit is een placeholder
     Duration: 2
-  - Sub: Het spijt me, dat we nooit gepraat hebben over dit, over wat ik zou willen.
+  - Sub: Voor tekst
     Duration: 2
-  - Sub: "Nu moet je het allemaal zelf bedenken. Ik wou dat ik bij je was, nog \xE9\xE9n
-      keer echt met je kon praten."
+  - Sub: Teeeeeekst
     Duration: 2
-  - Sub: Dit zijn maar herinneringen aan gedachten, oude gevoelens van toen we elkaar
-      lang niet zagen.
+  - Sub: tekst
     Duration: 2
-  - Sub: Maar ik weet dat jij dit nu voelt, alleen.
+  - Sub: doei
     Duration: 2
   Clip: {fileID: 8300000, guid: 772a1716e63987b46ad8203c0c7921a1, type: 3}
   Player: {fileID: 1005584881}
@@ -769,7 +766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d728a8c37bfef334b934c268684d01cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 43c99d9b075dad247a64b1001b3b2399, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

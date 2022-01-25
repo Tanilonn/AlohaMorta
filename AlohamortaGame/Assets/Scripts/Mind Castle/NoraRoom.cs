@@ -5,7 +5,6 @@ using UnityEngine;
 public class NoraRoom : MonoBehaviour
 {
     private GameManager manager;
-    public GameObject Textbox;
     public int Objective;
 
     // Start is called before the first frame update
@@ -15,7 +14,7 @@ public class NoraRoom : MonoBehaviour
 
         if (manager.Objectives[Objective].Completed)
         {
-            Textbox.SetActive(true);
+           
         }
     }
 
