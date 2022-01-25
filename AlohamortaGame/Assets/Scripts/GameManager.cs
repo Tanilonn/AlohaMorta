@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public GameObject NoraNotificationPrefab;
     public GameObject NotificationConPrefab;
     public GameObject NoraNotifPrefab;
+    public bool NoraOpen;
+
     private GameObject NotificationContainer;
     private GameObject NoraNotificationContainer;
 
@@ -75,7 +77,7 @@ public class GameManager : MonoBehaviour
         Canvas canvas = (Canvas)FindObjectOfType(typeof(Canvas));
         if (canvas != null)
         {
-            
+            NoraOpen = true;   
             NoraNotificationContainer = Instantiate(NoraNotifPrefab, canvas.transform);
             
             var n = Instantiate(NoraNotificationPrefab, NoraNotificationContainer.transform.Find("container").transform);
@@ -84,6 +86,7 @@ public class GameManager : MonoBehaviour
             //yield on a new YieldInstruction that waits for 5 seconds.
             yield return new WaitForSeconds(5);
 
+            NoraOpen = false;
             Destroy(NoraNotificationContainer);
         }
     }

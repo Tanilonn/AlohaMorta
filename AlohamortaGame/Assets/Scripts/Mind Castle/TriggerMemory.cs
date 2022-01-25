@@ -37,27 +37,34 @@ public class TriggerMemory : MonoBehaviour
     void OnMouseDown()
     {
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-        if(puzzleScript != null)
+        if (gameManager.NoraOpen == false)
         {
-            if (!puzzleScript.Objective.Completed)
+            if (puzzleScript != null)
             {
-                StartPuzzle();
+                if (!puzzleScript.Objective.Completed)
+                {
+                    StartPuzzle();
+                }
+                else
+                {
+                    OpenMemory();
+                }
             }
             else
             {
                 OpenMemory();
             }
         }
-        else
-        {
-            OpenMemory();
-        }
+        
         
     }    
 
     void OnMouseEnter()
     {
-        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+        if (gameManager.NoraOpen == false)
+        {
+            Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+        }
     }
 
     void OnMouseExit()
