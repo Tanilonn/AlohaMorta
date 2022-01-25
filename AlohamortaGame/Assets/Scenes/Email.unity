@@ -1504,7 +1504,7 @@ MonoBehaviour:
   - ID: 0
     Name: Email Beginner
     Description: Open je email voor de eerste keer
-    Completed: 0
+    Completed: 1
     Hidden: 1
   - ID: 0
     Name: Goals

@@ -11,6 +11,8 @@ public class DoorBehaviour : MonoBehaviour
     public Sprite unlocked;
     public SpriteRenderer door;
     private GameManager manager;
+    public Texture2D cursor;
+
 
 
     private void Start()
@@ -36,8 +38,23 @@ public class DoorBehaviour : MonoBehaviour
         //change scene
         if (!Locked)
         {
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
             SceneManager.LoadScene(Scene);
         }
+    }
+
+    void OnMouseEnter()
+    {
+        if (!Locked)
+        {
+            Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+
+        }
+    }
+
+    void OnMouseExit()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
 
