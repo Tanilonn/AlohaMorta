@@ -30,11 +30,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Message.unity
     guid: 9468b608e03c3924488564d768bdc082
   - enabled: 1
+    path: Assets/Scenes/Mind Castle/Grammofoon.unity
+    guid: 5ef2fc9d5bed5ab43a514d5a096f0734
+  - enabled: 1
     path: Assets/Scenes/Email.unity
     guid: dc7dce349b6bfcc4c805bfb5ae399df2
   - enabled: 1
     path: Assets/Scenes/Objectives.unity
     guid: 7cebb00070a0fe347be50beef8d774ab
+  - enabled: 1
+    path: Assets/Scenes/Mind Castle/Walkman.unity
+    guid: 35ff5aa5e9f85454d9b6a3eca6d341c3
   - enabled: 1
     path: Assets/Scenes/Mind Castle/Nora Room.unity
     guid: 00e2f46b8038bd5488c6765c0bb8a3c8
