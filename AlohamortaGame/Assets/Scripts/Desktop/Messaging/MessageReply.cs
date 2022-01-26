@@ -9,5 +9,6 @@ public class MessageReply
     public List<string> ReplyMessages;
     public Branch RequiredNode;
     public List<Branch> ActivatesNodes;
+    [HideInInspector]
     public List<Sprite> bijlages;
 }

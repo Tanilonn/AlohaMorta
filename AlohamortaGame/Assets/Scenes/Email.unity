@@ -1756,8 +1756,8 @@ MonoBehaviour:
       - Subject: 
         OptieNaam: Ik hoop het.
         ReplyMessages:
-        - "Hoi mama, ik hoop het, maar wat als ik haar misschien toch niet meer zo
-          goed kende\u2026"
+        - Hoi mama
+        - "ik hoop het, maar wat als ik haar misschien toch niet meer zo goed kende\u2026"
         RequiredNode: 0
         ActivatesNodes: 0500000006000000
         bijlages: []
@@ -1830,8 +1830,10 @@ MonoBehaviour:
       Hour: 18
       Sender: Mama
       Messages:
-      - Hoi lieverd, ik zag net de kaart die je voor Noor heb uitgekozen, het is
-        een leuke kaart maar denk je echt dat deze het beste aansloot op wie ze was?
+      - Hoi lieverd
+      - ik zag net de kaart die je voor Noor heb uitgekozen
+      - het is een leuke kaart maar denk je echt dat deze het beste aansloot op wie
+        ze was?
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
@@ -1867,8 +1869,9 @@ MonoBehaviour:
       Hour: 18
       Sender: Mama
       Messages:
-      - Hm, ik weet het niet. Ik dacht altijd dat Nora wat meer was van de bloemen,
-        enzo. Tenminste ze bracht mij altijd een prachtige bos als ze langs kwam.
+      - Hm, ik weet het niet.
+      - Ik dacht altijd dat Nora wat meer was van de bloemen, enzo.
+      - Tenminste ze bracht mij altijd een prachtige bos als ze langs kwam.
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
@@ -1907,7 +1910,7 @@ MonoBehaviour:
       Sender: Mama
       Messages:
       - Ik dacht dat misschien die kaart met de giraffe beter bij haar had gepast.
-        Ze was vroeger onafscheidelijk met die knuffel, zeker nadat ze die grote
+      - Ze was vroeger onafscheidelijk met die knuffel, zeker nadat ze die grote
         giraffe toen op safari had gezien.
       IsReceived: 0
       IsRead: 0
@@ -1946,9 +1949,10 @@ MonoBehaviour:
       Hour: 18
       Sender: Mama
       Messages:
-      - "Als jij het zegt. Het leek mij altijd meer dat Nora zo\u2019n grote liefde
-        had voor de natuur.. dat misschien die bloemrijke harten beter hadden gepast?
-        Ik weet het ook niet.."
+      - 'Als jij het zegt. '
+      - "Het leek mij altijd meer dat Nora zo\u2019n grote liefde had voor de natuur..
+        dat misschien die bloemrijke harten beter hadden gepast? Ik weet het ook
+        niet.."
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
@@ -2022,9 +2026,11 @@ MonoBehaviour:
       Hour: 18
       Sender: Mama
       Messages:
-      - Nee dat hoeft niet, ik geloof oprecht dat jij je best doet, en we hebben
-        niet voor niets afgesproken dat jij de kaart mocht ontwerpen. Zorg gewoon
-        dat je niet te overhaast een keus maakt, maar laat je ook niet opvreten erdoor.
+      - Nee dat hoeft niet
+      - ik geloof oprecht dat jij je best doet, en we hebben niet voor niets afgesproken
+        dat jij de kaart mocht ontwerpen.
+      - Zorg gewoon dat je niet te overhaast een keus maakt, maar laat je ook niet
+        opvreten erdoor.
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
@@ -2083,10 +2089,11 @@ MonoBehaviour:
       Hour: 18
       Sender: Mama
       Messages:
-      - Dat is ook zo en dat zie ik ook. Ik dacht alleen ik meld het even, ik wilde
+      - 'Dat is ook zo en dat zie ik ook. Ik dacht alleen ik meld het even, ik wilde
         je niet van streek maken, lieverd, tenminste, niet meer dan deze situatie
-        al doet. Papa en ik moeten nu de bloemen gaan uitzoeken, ik spreek je later
-        weer. Succes, lieverd.
+        al doet. '
+      - Papa en ik moeten nu de bloemen gaan uitzoeken, ik spreek je later weer.
+        Succes, lieverd.
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
@@ -2108,9 +2115,9 @@ MonoBehaviour:
       Hour: 18
       Sender: Mama
       Messages:
-      - Nee lieverd, is goed zo. Jij doet wat je denkt dat het beste is. Papa en
-        ik moeten nu de bloemen gaan uitzoeken, ik spreek je later weer. Succes,
-        lieverd.
+      - Nee lieverd, is goed zo. Jij doet wat je denkt dat het beste is.
+      - ' Papa en ik moeten nu de bloemen gaan uitzoeken, ik spreek je later weer.
+        Succes, lieverd.'
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
@@ -2132,8 +2139,9 @@ MonoBehaviour:
       Hour: 18
       Sender: Mama
       Messages:
-      - "Geen probleem. Nee nog niet, dat zijn papa en ik nu aan het doen. Ik zal
-        je straks even wat foto\u2019s sturen. Succes, lieverd."
+      - Geen probleem.
+      - "Nee nog niet, dat zijn papa en ik nu aan het doen. Ik zal je straks even
+        wat foto\u2019s sturen. Succes, lieverd."
       IsReceived: 0
       IsRead: 0
       IsReplied: 0
