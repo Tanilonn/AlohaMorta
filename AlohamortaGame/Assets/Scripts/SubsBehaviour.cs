@@ -10,14 +10,21 @@ public class SubsBehaviour : MonoBehaviour
     public AudioClip Clip;
     public AudioSource Player;
     public Button ContinueButton;
+    public GameObject DisableThis;
+
 
     private void Start()
-    {
+    {        
         Player.clip = Clip;
         Play();
+        ContinueButton.gameObject.SetActive(false);
     }
     public void Play()
     {
+        if (DisableThis != null)
+        {
+            DisableThis.SetActive(false);
+        }
         StartCoroutine(SubRoutine());
     }
 
@@ -34,7 +41,12 @@ public class SubsBehaviour : MonoBehaviour
 
     private void End()
     {
+        if (DisableThis != null)
+        {
+            DisableThis.SetActive(true);
+        }
         Subtitle.text = "";
+        Player.Stop();
         ContinueButton.gameObject.SetActive(true);
     }
 }

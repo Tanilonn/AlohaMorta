@@ -212,7 +212,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1287596305}
-  - {fileID: 576543542}
+  - {fileID: 510688438}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -538,6 +538,144 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &510688437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510688438}
+  - component: {fileID: 510688441}
+  - component: {fileID: 510688440}
+  - component: {fileID: 510688439}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &510688438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510688437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 30557005}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -159.9438}
+  m_SizeDelta: {x: -700.0001, y: -539.8876}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &510688439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510688437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 52f97f4892885774d9a027a03143d77c, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!114 &510688440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510688437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e315430db75c3142b3a8de529d0b1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Subtitle: {fileID: 510688439}
+  Subtitles:
+  - Sub: Dag lieve zus,
+    Duration: 2
+  - Sub: Wanneer je dit leest ben ik er helaas niet meer.
+    Duration: 3
+  - Sub: Maar deze plek, dit kasteel, is mijn laatste cadeau aan jou, en onze familie.
+    Duration: 6
+  - Sub: 'In dit kasteel zal je altijd het gevoel hebben dat ik nog bij je ben, hier
+      leven mijn herinneringen voort. '
+    Duration: 8
+  - Sub: Hier kan je keer op keer ervaren wie ik was, hoe ik mijn leven leidde, en
+      welke stiekeme streken ik allemaal uithaalde. Mocht je ooit het gore lef hebben
+      om ook maar iets over mij te vergeten.
+    Duration: 12
+  - Sub: 'Daarbij vraag jij je misschien af waarom ik destijds besloten heb om mee
+      te doen aan dit project? Aan dit bijzondere CHIP experiment. '
+    Duration: 8
+  - Sub: 'Nou, het leek mij simpelweg interessant om te kijken of het zou werken. '
+    Duration: 5
+  - Sub: Waar ik achteraf misschien beter over had na moeten denken gezien ik zelf
+      het resultaat niet kan zien... Of toch wel? Oeeeeh, spooky.
+    Duration: 10
+  - Sub: 'Misschien heb je er overigens functioneel gezien nog iets aan? Mocht je
+      met vragen of taken zitten wanneer ik er niet meer ben? '
+    Duration: 8
+  - Sub: "Ik weet het verder ook niet zo goed, ik hoop eigenlijk dat je dit \xFCberhaupt
+      nooit te lezen krijgt."
+    Duration: 5
+  - Sub: Maar mocht dat toch zo zijn, gecondoleerd met het verlies van mij, je lieve,
+      fantastische, en meest favoriete zusje ooit.
+    Duration: 10
+  - Sub: 'Sorry, misschien moet ik deze tekst toch wat serieuzer nemen, dus, wil
+      je tegen papa en mama zeggen dat ik altijd ontzettend veel van jullie heb gehouden? '
+    Duration: 13
+  - Sub: En dat ik dat ook altijd zal blijven doen, ongeacht wat het hiernamaals
+      inhoud.
+    Duration: 4
+  - Sub: Ondanks dat we elkaar niet meer fysiek zullen zien, zal ik jullie nooit
+      verlaten.
+    Duration: 4
+  - Sub: Liefs, Nora.
+    Duration: 3
+  Clip: {fileID: 8300000, guid: 6643c2c2003b4bd4296881724c46051f, type: 3}
+  Player: {fileID: 1464997792}
+  ContinueButton: {fileID: 1287596306}
+  DisableThis: {fileID: 1387209986}
+--- !u!222 &510688441
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510688437}
+  m_CullTransparentMesh: 0
 --- !u!1 &522643413
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,18 +936,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &576543541 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6577832099397995180, guid: 3c174067c48916f47a11071a09ff393f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6577832099965489561}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &576543542 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6577832099965489561}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620801798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +2119,7 @@ GameObject:
   - component: {fileID: 1464997790}
   - component: {fileID: 1464997789}
   - component: {fileID: 1464997791}
+  - component: {fileID: 1464997792}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -2038,8 +2165,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565add16bd85177499a0a338b9971e23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textbox: {fileID: 576543541}
+  Textbox: {fileID: 510688437}
   Objective: 3
+--- !u!82 &1464997792
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464997788}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1465281118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,194 +3113,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2051605076}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6577832099965489561
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 30557005}
-    m_Modifications:
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Name
-      value: Nora
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.data[0]
-      value: Dag lieve zus
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.data[1]
-      value: 'Wanneer je dit leest ben ik er helaas niet meer. Maar deze plek, dit
-        kasteel, is mijn laatste cadeau aan jou, en onze familie. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.data[2]
-      value: In dit kasteel zal je altijd het gevoel hebben dat ik nog bij je ben,
-        hier leven mijn herinneringen voort. Hier kan je keer op keer opnieuw ervaren
-        wie ik was, hoe ik mijn leven leidde, en welke stiekeme streken ik allemaal
-        uithaalde. Mocht je ooit het gore lef hebben om ook maar iets over mij te
-        vergeten, haha.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.data[3]
-      value: 'Daarbij vraag jij je misschien af waarom ik destijds besloten heb om
-        mee te doen aan dit project? Aan deze rare CHIP onderneming. Nou, het leek
-        mij simpelweg interessant om te kijken of het zou werken. Waar ik achteraf
-        misschien beter over had moeten nadenken gezien ik zelf het resultaat niet
-        kan zien... Of toch wel? Oeeeeh, spooky. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.data[4]
-      value: "Misschien heb je er functioneel gezien nog iets aan, mocht je met vragen
-        of taken zitten wanneer ik er niet meer ben? Ik weet het verder ook niet
-        zo goed, ik hoop eigenlijk dat je dit \xFCberhaupt nooit te lezen krijgt.
-        Maar mocht dat toch zo zijn, gecondoleerd met het verlies van mij, je meest
-        lieve, fantastische, en favoriete zusje ooit."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.data[5]
-      value: 'Sorry, misschien moet ik deze tekst toch wat serieuzer nemen, dus ter
-        afsluiting: Wil je tegen papa en mama zeggen dat ik altijd ontzettend veel
-        van jullie heb gehouden? En dat altijd zal blijven doen, ongeacht wat het
-        hiernamaals inhoud.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.data[6]
-      value: Ondanks dat we elkaar niet meer fysiek zullen zien, zal ik jullie nooit
-        verlaten.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995168, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: Monologue.Array.data[7]
-      value: Liefs, Nora
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995180, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_Name
-      value: Textbox
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995180, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 600
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577832099397995183, guid: 3c174067c48916f47a11071a09ff393f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3c174067c48916f47a11071a09ff393f, type: 3}
