@@ -12,6 +12,7 @@ public class DoorBehaviour : MonoBehaviour
     public SpriteRenderer door;
     private GameManager manager;
     public Texture2D cursor;
+    public bool flip;
 
 
 
@@ -29,7 +30,11 @@ public class DoorBehaviour : MonoBehaviour
     {
         Locked = false;        
         door.sprite = unlocked;
-        door.flipX = true;
+        if (flip)
+        {
+            door.flipX = true;
+
+        }
 
     }
 
