@@ -1078,6 +1078,8 @@ MonoBehaviour:
   puzzleCanvas: {fileID: 604603374}
   artifacts:
   - {fileID: 5537810958730669221, guid: 6c766988b7fbe9e46a73e8efa7b0efcf, type: 3}
+  - {fileID: 1014027067783852118, guid: c970b3b6f67cb0e4aa5ee20be470deb5, type: 3}
+  - {fileID: 8022863506730499145, guid: 92b2708c8660bf24f8df3068ef3b1a11, type: 3}
   manager: {fileID: 0}
 --- !u!4 &675408243
 Transform:
