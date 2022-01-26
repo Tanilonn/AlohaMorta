@@ -668,7 +668,7 @@ MonoBehaviour:
       verlaten.
     Duration: 4
   - Sub: Liefs, Nora.
-    Duration: 3
+    Duration: 5
   Clip: {fileID: 8300000, guid: 6643c2c2003b4bd4296881724c46051f, type: 3}
   Player: {fileID: 1464997792}
   ContinueButton: {fileID: 1287596306}

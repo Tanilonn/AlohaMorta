@@ -318,7 +318,7 @@ MonoBehaviour:
       zijn voor meer pijn en verdriet.
     Duration: 9
   - Sub: Ik hou van jullie, ik wil het niet.
-    Duration: 7
+    Duration: 8
   Clip: {fileID: 8300000, guid: b07b1ca1808836d44adab07f92c2a5d2, type: 3}
   Player: {fileID: 1005584881}
   ContinueButton: {fileID: 1320174852}
