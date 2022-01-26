@@ -1546,6 +1546,11 @@ MonoBehaviour:
     Description: Bekijk minstens 1 artifact in de bibliotheek in Nora's Mind Castle
     Completed: 0
     Hidden: 0
+  - ID: 0
+    Name: Twijfel?
+    Description: App mama terug over de rouwkaart
+    Completed: 0
+    Hidden: 1
   NotificationSprites:
   - {fileID: 21300000, guid: 851b73a8583a5fe43a75068b189d7cd6, type: 3}
   - {fileID: 21300000, guid: 80ce33c1b6a0fb64d82f4ef2906ee201, type: 3}
@@ -1557,6 +1562,7 @@ MonoBehaviour:
     type: 3}
   NoraNotifPrefab: {fileID: 3314114839057769634, guid: 16d2e8b36b0051543ab96041d32edb08,
     type: 3}
+  NoraOpen: 0
 --- !u!4 &644268835
 Transform:
   m_ObjectHideFlags: 0
@@ -1817,6 +1823,331 @@ MonoBehaviour:
         bijlages: []
       RequiredBranch: 7
       RequiredObjective: 0
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - Hoi lieverd, ik zag net de kaart die je voor Noor heb uitgekozen, het is
+        een leuke kaart maar denk je echt dat deze het beste aansloot op wie ze was?
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies:
+      - Subject: Vind jij van niet?
+        OptieNaam: Vind jij van niet?
+        ReplyMessages:
+        - Uh, ik hoop het wel, vind jij van niet dan, mama?
+        RequiredNode: 0
+        ActivatesNodes: 0b000000
+        bijlages: []
+      - Subject: 'Ja, ik vermoed van wel. '
+        OptieNaam: 'Ja, ik vermoed van wel. '
+        ReplyMessages:
+        - Ja, ik vermoed van wel.
+        RequiredNode: 0
+        ActivatesNodes: 0b000000
+        bijlages: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 2
+      RequiredObjective: 11
+      ReadObjective: 0
+      RepliedObjective: 13
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - Hm, ik weet het niet. Ik dacht altijd dat Nora wat meer was van de bloemen,
+        enzo. Tenminste ze bracht mij altijd een prachtige bos als ze langs kwam.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies:
+      - Subject: Daar ben ik het niet mee eens
+        OptieNaam: Daar ben ik het niet mee eens
+        ReplyMessages:
+        - Nou daar ben ik het eigenlijk niet mee eens, mam. Maar jij herinnert je
+          haar misschien ook anders dan ik.
+        RequiredNode: 0
+        ActivatesNodes: 0f000000
+        bijlages: []
+      - Subject: Misschien heb je gelijk
+        OptieNaam: Misschien heb je gelijk
+        ReplyMessages:
+        - Hm, misschien heb je gelijk.. Zal ik anders Boris even mailen dat we een
+          andere willen kiezen?
+        RequiredNode: 0
+        ActivatesNodes: 10000000
+        bijlages: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 12
+      RequiredObjective: 13
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - Ik dacht dat misschien die kaart met de giraffe beter bij haar had gepast.
+        Ze was vroeger onafscheidelijk met die knuffel, zeker nadat ze die grote
+        giraffe toen op safari had gezien.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies:
+      - Subject: Daar ben ik het niet mee eens
+        OptieNaam: Daar ben ik het niet mee eens
+        ReplyMessages:
+        - Nou daar ben ik het eigenlijk niet mee eens, mam. Maar jij herinnert je
+          haar misschien ook anders dan ik.
+        RequiredNode: 0
+        ActivatesNodes: 0f000000
+        bijlages: []
+      - Subject: Misschien heb je gelijk
+        OptieNaam: Misschien heb je gelijk
+        ReplyMessages:
+        - Hm, misschien heb je gelijk.. Zal ik anders Boris even mailen dat we een
+          andere willen kiezen?
+        RequiredNode: 0
+        ActivatesNodes: 10000000
+        bijlages: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 13
+      RequiredObjective: 13
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - "Als jij het zegt. Het leek mij altijd meer dat Nora zo\u2019n grote liefde
+        had voor de natuur.. dat misschien die bloemrijke harten beter hadden gepast?
+        Ik weet het ook niet.."
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies:
+      - Subject: Daar ben ik het niet mee eens
+        OptieNaam: Daar ben ik het niet mee eens
+        ReplyMessages:
+        - Nou daar ben ik het eigenlijk niet mee eens, mam. Maar jij herinnert je
+          haar misschien ook anders dan ik.
+        RequiredNode: 0
+        ActivatesNodes: 0f000000
+        bijlages: []
+      - Subject: Misschien heb je gelijk
+        OptieNaam: Misschien heb je gelijk
+        ReplyMessages:
+        - Hm, misschien heb je gelijk.. Zal ik anders Boris even mailen dat we een
+          andere willen kiezen?
+        RequiredNode: 0
+        ActivatesNodes: 10000000
+        bijlages: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 14
+      RequiredObjective: 13
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - Ja, dat zal dan wel. Ik weet het verder ook niet, ik zeg maar wat.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies:
+      - Subject: Ik zal het proberen te onthouden.
+        OptieNaam: Ik zal het proberen te onthouden.
+        ReplyMessages:
+        - Ja, mam, ik zal het proberen te onthouden. We doen allemaal ons best.
+        RequiredNode: 0
+        ActivatesNodes: 11000000
+        bijlages: []
+      - Subject: Snap ik, maar ik doe mijn best.
+        OptieNaam: Snap ik, maar ik doe mijn best.
+        ReplyMessages:
+        - Snap ik, mam, maar doe mijn best, voor ons en voor Nora.
+        RequiredNode: 0
+        ActivatesNodes: 12000000
+        bijlages: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 15
+      RequiredObjective: 13
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - Nee dat hoeft niet, ik geloof oprecht dat jij je best doet, en we hebben
+        niet voor niets afgesproken dat jij de kaart mocht ontwerpen. Zorg gewoon
+        dat je niet te overhaast een keus maakt, maar laat je ook niet opvreten erdoor.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies:
+      - Subject: Bedankt, mam.
+        OptieNaam: Bedankt, mam.
+        ReplyMessages:
+        - Bedankt mam, komt goed. Hebben jullie al bloemen uitgezocht?
+        RequiredNode: 0
+        ActivatesNodes: 14000000
+        bijlages: []
+      - Subject: Weet je het zeker?
+        OptieNaam: Weet je het zeker?
+        ReplyMessages:
+        - Hm, misschien heb je gelijk.. Zal ik anders Boris even mailen dat we een
+          andere willen kiezen?
+        RequiredNode: 0
+        ActivatesNodes: 13000000
+        bijlages: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 16
+      RequiredObjective: 13
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - 'Dat weet ik. Dankjewel, lieverd, succes nog even. '
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 18
+      RequiredObjective: 13
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - Dat is ook zo en dat zie ik ook. Ik dacht alleen ik meld het even, ik wilde
+        je niet van streek maken, lieverd, tenminste, niet meer dan deze situatie
+        al doet. Papa en ik moeten nu de bloemen gaan uitzoeken, ik spreek je later
+        weer. Succes, lieverd.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 17
+      RequiredObjective: 13
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - Nee lieverd, is goed zo. Jij doet wat je denkt dat het beste is. Papa en
+        ik moeten nu de bloemen gaan uitzoeken, ik spreek je later weer. Succes,
+        lieverd.
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 19
+      RequiredObjective: 13
+      ReadObjective: 0
+      RepliedObjective: 0
+      bijlages: []
+    - Day: 1
+      Hour: 18
+      Sender: Mama
+      Messages:
+      - "Geen probleem. Nee nog niet, dat zijn papa en ik nu aan het doen. Ik zal
+        je straks even wat foto\u2019s sturen. Succes, lieverd."
+      IsReceived: 0
+      IsRead: 0
+      IsReplied: 0
+      IsNotified: 0
+      Replies: []
+      ChosenReply:
+        Subject: 
+        OptieNaam: 
+        ReplyMessages: []
+        RequiredNode: 0
+        ActivatesNodes: 
+        bijlages: []
+      RequiredBranch: 20
+      RequiredObjective: 13
       ReadObjective: 0
       RepliedObjective: 0
       bijlages: []
@@ -5145,21 +5476,21 @@ MonoBehaviour:
       OptieNaam: Graag zou ik het eerste ontwerp kiezen.
       Text: {fileID: 4900000, guid: 624d69e988a36814faf71dd6c80537d8, type: 3}
       RequiredNode: 0
-      ActivatesNodes: 02000000
+      ActivatesNodes: 020000000c000000
       bijlages:
       - {fileID: 21300000, guid: d9f6fed72b801cd42ac23cd26442c50b, type: 3}
     - Subject: 'Re: Re: Rouwkaart Nora'
       OptieNaam: Graag zou ik het tweede ontwerp kiezen.
       Text: {fileID: 4900000, guid: f91955c417953084a902358e6e1df2fb, type: 3}
       RequiredNode: 0
-      ActivatesNodes: 02000000
+      ActivatesNodes: 020000000e000000
       bijlages:
       - {fileID: 21300000, guid: 366bf11936b05fe449deb3fed07595f6, type: 3}
     - Subject: 'Re: Re: Rouwkaart Nora'
       OptieNaam: Graag zou ik het derde ontwerp kiezen.
       Text: {fileID: 4900000, guid: 27e8e4b549ee9d24e82cafe970ba3646, type: 3}
       RequiredNode: 0
-      ActivatesNodes: 02000000
+      ActivatesNodes: 020000000d000000
       bijlages:
       - {fileID: 21300000, guid: 8b7d843afde02404f983f2f816412f6d, type: 3}
     RequiredBranch: 5
