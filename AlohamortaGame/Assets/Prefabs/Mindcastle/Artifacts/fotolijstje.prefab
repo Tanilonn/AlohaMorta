@@ -125,23 +125,28 @@ MonoBehaviour:
   memory:
     name: Fotolijstje
     Title: Fotolijstje
-    Text: "Bam en nog een gat in de weg, en nog eens. Het was weer een avontuur in
-      het andere land. Afrika zou ik nooit meer vergeten. Ik kan nog herinneren dat
-      Nel maar zat te brommen en weer te huilen omdat ze naar het hotel wilde gaan.
-      We reden ergens midden in de rimboe, Ik zat mijn ogen uit te staren. Het was
-      zo mooi warm en er waren zulke gekke boompjes. Maar dan ineens liepen er ineens
-      zebra's over de weg. Ik kon mijn ogen niet meer geloven. \"OHH MAMAA ZEBRAHHH\"
-      schreeuwde ik haha. Ik vond de zebra's gaaf om te zien vanuit de auto. Maar
-      het meest bijzondere kwam uit het niks achter ons in de te loeren. Ik voel
-      de warme adem en hoor het gesmak nog erg goed. Ik keek naar achteren. \"AAAaahh\"
-      gilde Nel keihard in m\u2019n oren. Ik heb nog nooit zoiets moois en elegants
-      gezien. het was zoo groot en lang; een Giraffe. De giraffe bleef kijken naar
-      mij en mijn banaan. Ik had mijn momentje genomen en gaf meneer de giraffe mijn
-      banaan. Sindsdien ben ik geobsedeerd geraakt met giraffen. Vond het zo ontzettend
-      gaaf. "
+    Text: "Bam! en nog een gat in de weg, en nog eens. Het is een avontuur op vakantie
+      hoor.\r\nWe zitten achterin op een hobbelige open Jeep. Emma zit de hele tijd
+      maar te brommen en nu weer te huilen omdat ze naar het hotel wil gaan en het
+      maar vreselijk vindt.\r\nErgens midden in de rimboe, tussen de boompjes en
+      in een warmtegolf, zit ik mijn ogen uit te staren. Het is zo prachtig en anders
+      dan het koude Nederland. Het voelt lekker warm en de boompjes zijn zo anders.\r\nEn
+      dan wordt er ineens keihard op de rem getrapt. Er lopen gewoon zebra's over
+      de weg. Ik moet even een paar keer knipperen met mijn ogen. We zijn niet in
+      de dierentuin nu toch?\r\n\"OHH MAMAA ZEBRAHHH\" schreeuwde ik blij.\r\n\u201CJa
+      Nora, dat zie je ook niet vaak he\u201D zei mama.\r\nLangzaam lopen ze een
+      beetje heen en weer. Opeens voel ik een warme adem en hoor ik het gesmak naast
+      mijn oren.\r\nIk draai me net om en dan \"AAAaahh\" Krijst Emma keihard in
+      mijn andere oor. Ik schrik en het grote figuur naast me ook. Ik heb nog nooit
+      zoiets moois en elegants gezien. \r\nIk zie een mooie patroon aan lichtbruine
+      vlekken voorbijgaan. Het is zo groot en lang ; een Giraffe. De giraffe blijft
+      me aanstaren en naar mijn banaan.  Deze mooie giraffe heeft honger. \r\n\u201CHier
+      meneer Giraffe, een mooie banaan voor jou!\u201D ; zeg ik.  De giraffe is zo
+      blij met mijn banaan. Sindsdien ben ik geobsedeerd geraakt met giraffen. Ik
+      vind het zo ontzettend gaaf.\r\n"
     Image: {fileID: 21300000, guid: 9107e034de9bac64187fb9e49c32daae, type: 3}
     Sound: {fileID: 8300000, guid: 90827ac6228204f438ebf0ebab7a9cdb, type: 3}
-    noraComment: Haha ik hoor je nog gillen als ik er aan denk
+    noraComment: 
   cursor: {fileID: 2800000, guid: c0b6eea0e8a81ff4ea53fe606ba093b8, type: 3}
   puzzle:
     Name: 

@@ -125,22 +125,35 @@ MonoBehaviour:
   memory:
     name: Boek
     Title: Boek
-    Text: "Het is als de dag van gisteren dat ik in bed lag en mams binnen kwam met
-      haar grote boek, BLOEMBOEK; schreeuwde ik dan altijd in blijheid.  \n\nAls
-      het boek open gaat dan begint de magie en vouwt er zo een bloem omhoog. Haar
-      verhalen waren dan ook zo grappig bij elke bloem. Maar eentje blijft me dan
-      altijd bij. \n\nDe bloem van de liefde. Een roos, Mams vertelde altijd over
-      het verhaal van hoe opa mijn oma verraste met een boeket rozen en haar vertelde
-      dat zijn liefde voor haar net zolang duurde tot de laatste bloem in het boeket
-      dood ging. de bloemen gingen langzaam dood maar een bloem die bleef staan.
-      Het was een witte roos. \n\nHet duurde even voor oma om erachter te komen dat
-      het niet een echte was maar wat ze wel wist is dat de bloem voor altijd bij
-      haar zou blijven. Het is een van de mooiste verhalen die ik ken. \n\nNu me
-      opa er niet meer is fysiek is zijn liefde nog steeds overal terug te zien net
-      als de prachtige roos. Nu mijn favoriete witte roos. "
+    Text: "Ik zit hard te gapen. Het is acht uur \u2019s avonds en ik lig lekker
+      onder de warme zachte dekens. Ik hoor voetstappen en ineens gaat de deur open.
+      \u201CMama!\u201D; schreeuwde ik blij. Mama lacht naar me en haalt ineens een
+      boek van achter haar rug tevoorschijn. \u201COhh, Bloemboek\u201D roep ik.\r\nMama
+      gaat bij me op bed zitten en doet het boek open. Het pakt me elke keer als
+      ik bloemboek weer zie. Het voelt zo magisch aan elke keer weer. Ineens vouwt
+      er zich een mooie bloem tussenuit de bladzijden. Ik begin te giechelen want
+      het is een gekke bloem. \u201Cverhaaltje, verhaaltje mamaa?\u201D vraag ik.
+      \u201COkay okay, Nora nog een keer dan\u201D antwoordde mams. \u201CYay!\u201D
+      ; schreeuw ik.\r\nZe slaat haar bladzijde om en daar is die prachtige mooie
+      roos weer. Mama begint zo haar verhaal:\r\n\u201CDe bloem van de liefde, de
+      roos. Op een avond hadden je oma en opa eens ruzie. Opa was vergeten oma\u2019s
+      bloemen water te geven. Oma was zo getreurd want haar favoriete geliefde roos
+      ertussen was doodgegaan. Opa heeft lang nagedacht en wilde iets bijzonders
+      doen om het goed te maken met je oma.\r\nDe volgende dag komt Opa met een van
+      de mooiste boeketten met bloemen die je oma ooit heeft gezien. Hij zei tegen
+      je oma dat zijn liefde voor haar net zolang duurde tot de laatste bloem in
+      het boeket doodging.\r\nEen voor een gingen de bloemen langzaam dood maar een
+      bloem die bleef staan. Het was een witte prachtige roos. Het heeft wel eventjes
+      geduurd voordat je oma erachter kwam dat het niet een echte bloem was, maar
+      wat ze wel wist is dat de bloem voor altijd bij haar zou blijven en opa\u2019s
+      liefde voor altijd bij haar zou blijven.\u201D \r\nIk krijg nu weer een heel
+      warm gevoel bij mama\u2019s verhaal en wordt altijd zo blij van oma en opa.\r\nHet
+      is een van de mooiste verhalen die ik ken. Nu mijn opa er niet meer is. fysiek
+      is zijn liefde nog steeds overal terug te zien net als de prachtige roos. Nu
+      mijn favoriete witte roos.\r\n"
     Image: {fileID: 21300000, guid: 1281b5b54e981af4eb8692857bf187de, type: 3}
     Sound: {fileID: 8300000, guid: 90827ac6228204f438ebf0ebab7a9cdb, type: 3}
-    noraComment: Opa... nu zijn we weer samen.
+    noraComment: 
   cursor: {fileID: 2800000, guid: c0b6eea0e8a81ff4ea53fe606ba093b8, type: 3}
   puzzle:
     Name: 
