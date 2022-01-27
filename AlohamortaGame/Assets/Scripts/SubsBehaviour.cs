@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SubsBehaviour : MonoBehaviour
@@ -11,6 +12,7 @@ public class SubsBehaviour : MonoBehaviour
     public AudioSource Player;
     public Button ContinueButton;
     public GameObject DisableThis;
+    public string Scene;
 
 
     private void Start()
@@ -48,5 +50,9 @@ public class SubsBehaviour : MonoBehaviour
         Subtitle.text = "";
         Player.Stop();
         ContinueButton.gameObject.SetActive(true);
+        if (!string.IsNullOrEmpty(Scene))
+        {
+            SceneManager.LoadScene(Scene);
+        }
     }
 }

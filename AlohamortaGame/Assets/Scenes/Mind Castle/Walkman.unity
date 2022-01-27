@@ -664,6 +664,7 @@ MonoBehaviour:
   Player: {fileID: 908872766}
   ContinueButton: {fileID: 940480505}
   DisableThis: {fileID: 0}
+  Scene: Bedroom
 --- !u!222 &824326705
 CanvasRenderer:
   m_ObjectHideFlags: 0
