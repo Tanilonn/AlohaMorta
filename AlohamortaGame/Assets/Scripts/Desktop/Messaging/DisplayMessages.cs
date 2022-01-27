@@ -176,7 +176,8 @@ public class DisplayMessages : MonoBehaviour
                 messages.Add(button.gameObject);
                 button.onClick.AddListener(delegate { DisplayReplies(chain, c); });
             }
-        }        
+        }
+        ScrollToBottom();
     }
 
 
@@ -195,6 +196,7 @@ public class DisplayMessages : MonoBehaviour
             button.onClick.AddListener(delegate { Reply(m, reply); });
             button.onClick.AddListener(delegate { DisplayContactChain(c); });
         }
+        ScrollToBottom();
     }
 
     
@@ -253,6 +255,20 @@ public class DisplayMessages : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    private void ScrollToBottom()
+    {
+        StartCoroutine(PushToBottom());
+
+    }
+
+    IEnumerator PushToBottom()
+    {
+        yield return new WaitForEndOfFrame();
+        var scroll = MessageField.transform.parent.parent.GetComponent<ScrollRect>();
+        scroll.verticalNormalizedPosition = 0;
+        LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)scroll.transform);
     }
 
 }

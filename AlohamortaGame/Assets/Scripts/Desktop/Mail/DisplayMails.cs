@@ -111,6 +111,7 @@ public class DisplayMails : MonoBehaviour
 
     void DisplaySelectedMail(Mail mail)
     {
+        ScrollToTop();
         HideBijlages();        
         ToggleReplyButton(AvailableReplies(mail));
         
@@ -243,5 +244,13 @@ public class DisplayMails : MonoBehaviour
         }
         return false;
     }
+
+
+    private void ScrollToTop()
+    {
+        MailTextField.transform.parent.parent.GetComponent<ScrollRect>().normalizedPosition = new Vector2(0, 1);
+
+    }
+
 
 }
