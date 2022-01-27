@@ -191,16 +191,15 @@ public class DisplayMessages : MonoBehaviour
             button.transform.Find("Text").GetComponent<Text>().text = reply.OptieNaam;
             //display reply optienaam
 
-            button.onClick.AddListener(delegate { manager.SendReply(reply); });
             button.onClick.AddListener(delegate { HideReplies(); });
-            button.onClick.AddListener(delegate { CheckReplyObjective(m, reply); });
+            button.onClick.AddListener(delegate { Reply(m, reply); });
             button.onClick.AddListener(delegate { DisplayContactChain(c); });
         }
     }
 
     
 
-    private void CheckReplyObjective(MessageChain m, MessageReply r)
+    private void Reply(MessageChain m, MessageReply r)
     {
         //set mail to replied
         m.IsReplied = true;
@@ -209,6 +208,7 @@ public class DisplayMessages : MonoBehaviour
         {
             gameManager.CheckObjective(gameManager.Objectives[m.RepliedObjective]);
         }
+        manager.SendReply(r);
     }
 
     void HideBijlages()
