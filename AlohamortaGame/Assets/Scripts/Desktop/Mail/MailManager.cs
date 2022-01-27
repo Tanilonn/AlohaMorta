@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MailManager : MonoBehaviour
 {
@@ -57,7 +58,10 @@ public class MailManager : MonoBehaviour
                     {
                         mail.IsNotified = true;
                         Notifications.MailUnread++;
-                        StartCoroutine(manager.NotificationCoroutine("Nieuwe email van " + mail.Sender + " betreft: " + mail.Subject, 1));
+                        if (SceneManager.GetActiveScene().name != "Email")
+                        {
+                            StartCoroutine(manager.NotificationCoroutine("Nieuwe email van " + mail.Sender + " betreft: " + mail.Subject, 1));
+                        }
                     }
                 }
             }

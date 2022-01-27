@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MessageManager : MonoBehaviour
 {
@@ -59,7 +60,10 @@ public class MessageManager : MonoBehaviour
                         {
                             m.IsNotified = true;
                             Notifications.WhatsappUnread++;
-                            StartCoroutine(manager.NotificationCoroutine("Nieuw bericht van " + m.Sender, 2));
+                            if(SceneManager.GetActiveScene().name != "Message")
+                            {
+                                StartCoroutine(manager.NotificationCoroutine("Nieuw bericht van " + m.Sender, 2));
+                            }
                         }
                     }
                 }
