@@ -1564,6 +1564,7 @@ MonoBehaviour:
   NotificationSprites:
   - {fileID: 21300000, guid: 851b73a8583a5fe43a75068b189d7cd6, type: 3}
   - {fileID: 21300000, guid: 80ce33c1b6a0fb64d82f4ef2906ee201, type: 3}
+  - {fileID: 21300000, guid: acb21515c1abfdf4c8f1881e077e647d, type: 3}
   NotificationPrefab: {fileID: 8067836376100414737, guid: 5f1fb38d3bfcdd5409fb51f17e8676e4,
     type: 3}
   NoraNotificationPrefab: {fileID: 4424848547432045628, guid: 9fec292caa5667a4d9382de8e647ab76,
