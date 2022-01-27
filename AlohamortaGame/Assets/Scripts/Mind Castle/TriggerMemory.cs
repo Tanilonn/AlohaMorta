@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class TriggerMemory : MonoBehaviour
 {
     public ArtifactManager manager;
+    public GameObject MemoryCanvas;
     public Memory memory;
     public Texture2D cursor;
     public Puzzle puzzle;
@@ -12,6 +13,7 @@ public class TriggerMemory : MonoBehaviour
     private GameManager gameManager;
     private PuzzleBehaviour puzzleScript;
     private Objective objectiveOnlyArtifact;
+    private GameObject currentCanvas;
 
     private void Awake()
     {
@@ -85,23 +87,37 @@ public class TriggerMemory : MonoBehaviour
         {
             gameManager.CheckObjective(objectiveOnlyArtifact);
         }
-        manager.canvas.canvas.gameObject.SetActive(true);
-        SetActiveBackground(false);
-        manager.canvas.title.text = memory.Title;
-        manager.canvas.text.text = memory.Text;
-        manager.canvas.image.sprite = memory.Image;
-        manager.canvas.image.preserveAspect = true;
-        manager.canvas.audioPlayer.clip = memory.Sound;
-        manager.canvas.audioPlayer.Play();
-        var button = manager.canvas.canvas.gameObject.transform.Find("CloseButton").GetComponent<Button>();
-        button.onClick.RemoveAllListeners();
-        button.onClick.AddListener(delegate { CloseMemory(); });
-
-
+        if (MemoryCanvas != null)
+        {
+            currentCanvas = Instantiate(MemoryCanvas);
+            SetActiveBackground(false);
+            var button = currentCanvas.transform.Find("CloseButton").GetComponent<Button>();
+            button.onClick.RemoveAllListeners();
+            button.onClick.AddListener(delegate { CloseMemory(); });
+        }
+        else
+        {
+            manager.canvas.canvas.gameObject.SetActive(true);
+            SetActiveBackground(false);
+            manager.canvas.title.text = memory.Title;
+            manager.canvas.text.text = memory.Text;
+            manager.canvas.image.sprite = memory.Image;
+            manager.canvas.image.preserveAspect = true;
+            manager.canvas.audioPlayer.clip = memory.Sound;
+            manager.canvas.audioPlayer.Play();
+            var button = manager.canvas.canvas.gameObject.transform.Find("CloseButton").GetComponent<Button>();
+            button.onClick.RemoveAllListeners();
+            button.onClick.AddListener(delegate { CloseMemory(); });
+        }
     }
 
     public void CloseMemory()
     {
+        if (MemoryCanvas != null && currentCanvas!=null)
+        {
+            Destroy(currentCanvas);
+            SetActiveBackground(true);
+        }
         if (!string.IsNullOrEmpty(memory.noraComment))
         {
             StartCoroutine(gameManager.NoraNotificationCoroutine(memory.noraComment));
