@@ -59,7 +59,7 @@ public class MessageManager : MonoBehaviour
                         {
                             m.IsNotified = true;
                             Notifications.WhatsappUnread++;
-                            StartCoroutine(manager.NotificationCoroutine("Nieuw bericht van " + m.Sender, 1));
+                            StartCoroutine(manager.NotificationCoroutine("Nieuw bericht van " + m.Sender, 2));
                         }
                     }
                 }
