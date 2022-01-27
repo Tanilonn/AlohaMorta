@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d587e7a60160fcb4c994bea162145fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 5
   backgroundSprite: {fileID: 350891852}
 --- !u!1001 &279336708
 PrefabInstance:
