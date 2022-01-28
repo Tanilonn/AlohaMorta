@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
+  MemoryCanvas: {fileID: 7234755246216449213, guid: 6584b1f0cc6b5bc44a5ba5389bfdecac,
+    type: 3}
   memory:
     name: Knuffel
     Title: Knuffel

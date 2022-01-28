@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
+  MemoryCanvas: {fileID: 237593335831879097, guid: fd088734214150841a7767d9e4984cc1,
+    type: 3}
   memory:
     name: Beker
     Title: Beker

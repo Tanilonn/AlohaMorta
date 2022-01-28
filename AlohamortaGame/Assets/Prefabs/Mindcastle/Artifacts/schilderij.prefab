@@ -122,6 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
+  MemoryCanvas: {fileID: 6298860709301622131, guid: 867cb6655f9e93845938117ca8972f00,
+    type: 3}
   memory:
     name: Schilderij
     Title: Schilderij

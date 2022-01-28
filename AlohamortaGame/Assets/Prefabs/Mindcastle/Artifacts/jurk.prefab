@@ -122,6 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
+  MemoryCanvas: {fileID: 2446620108446978212, guid: de8ea26621db8864cb8d086c09e8fe93,
+    type: 3}
   memory:
     name: Jurk
     Title: Jurk
