@@ -263,21 +263,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Subtitle: {fileID: 49760498}
   Subtitles:
-  - Sub: "Vreemd h\xE8? Zo door iemands leven wandelen, mijn leven door te wandelen."
+  - Sub: "Vreemd h\xE8? Zo door iemands leven wandelen, door mijn leven heen te wandelen."
     Duration: 8
   - Sub: "Ik vraag mij de laatste tijd eigenlijk steeds vaker af wanneer je dit te
       zien gaat krijgen, \xF3f je het \xFCberhaupt te zien gaat krijgen. "
     Duration: 9
-  - Sub: 'Wil je het wel zien? Heb je hier iets aan? Ik weet dat ik jou gemachtigd
-      heb hiervoor, maar ik weet ook dat je het lastig vind om het er verder over
-      te hebben. '
+  - Sub: Wil je het wel zien? Heb je hier iets aan? Ik weet dat ik jou hiervoor gemachtigd
+      heb, maar ik weet ook dat je het lastig vind om het er verder over te hebben.
     Duration: 9
   - Sub: "Ik probeer mijzelf in schoenen te verplaatsen die ik niet ken, en waarvan
-      ik niet weet of ik het zelf wel zou willen, of \xFCberhaupt aan zou kunnen. "
+      ik niet eens weet of ik het zelf wel zou willen, of \xFCberhaupt aan zou kunnen. "
     Duration: 10
-  - Sub: "De enige reden dat ik aan dit hele experiment ben gaan meedoen, het is
-      om een toekomstig afscheid voor jullie makkelijker te maken en niet omdat ik
-      het \u201Csimpelweg interessant\u201D vind. "
+  - Sub: "De enige reden dat ik aan dit hele experiment ben gaan meedoen  is om een
+      toekomstig afscheid voor jullie makkelijker te maken, en niet omdat ik het
+      \u201Csimpelweg interessant\u201D vind. "
     Duration: 12
   - Sub: "Want je weet gewoon niet wat er kan gaan gebeuren. Je hoopt op niets \xE9n
       zeker niet vroeg of op een jonge leeftijd, maar je weet het gewoon niet. Dingen
@@ -288,11 +287,11 @@ MonoBehaviour:
     Duration: 9
   - Sub: "Mama kapt het gesprek vaak af met: \u201Cwil je dood dan?\u201D. "
     Duration: 4
-  - Sub: En met papa is er al helemaal niet over te praten, dat weet je zelf ook
-      wel, alles wat met zware emoties te maken heeft gaat hij liever uit de weg.
+  - Sub: En met papa is er al helemaal niet over te praten, dat weet je zelf ook,
+      alles wat met zware emoties te maken heeft gaat hij liever uit de weg.
     Duration: 7
   - Sub: 'Ik ben gewoon zo bang dat er iets mis gaat, dat er dingen toch nog niet
-      duidelijk zijn? Wat als ik jullie hiermee alleen maar meer verwar? '
+      duidelijk zijn. Wat als ik jullie hiermee alleen maar meer verwar? '
     Duration: 9
   - Sub: "Wat als jullie, of \xE9\xE9n van jullie\u2026 Wat als er iemand het niet
       eens gaat zijn met de uitkomst? Wat als jullie ruzie gaan krijgen of iets in
@@ -300,19 +299,20 @@ MonoBehaviour:
     Duration: 11
   - Sub: 'Wat als mijn keuze nu betekend dat de familie hierdoor opbreekt? '
     Duration: 4
-  - Sub: 'Nee, nee, nu ik dit allemaal zo hardop zeg word ik echt alleen maar gekker
-      van die gedachtes, dat kan niet, dat mag niet, het mag gewoon niet gebeuren. '
+  - Sub: 'Nee, nee, nee, nu ik dit allemaal zo hardop zeg word ik echt alleen maar
+      gekker van die gedachtes, dat kan niet, dat mag niet, het mag gewoon niet gebeuren. '
     Duration: 13
   - Sub: "Dit is niet ok\xE9, dit is niet de manier, wat ik nu aan het doen ben is
       niet de manier, ik moet duidelijk zijn tegen jullie."
     Duration: 6
   - Sub: 'Weet je wat, ik ga vanmiddag toch bij mama op de koffie, ik moet het gewoon
-      opperen, ik moet het gesprek alsnog beginnen, en door te zetten, wat ze ook
-      zegt of wat ze ook doet, hoe hard ze ook haar best doet om het af te wuiven. '
+      opperen, ik moet het gesprek alsnog gewoon beginnen, en door te zetten, wat
+      ze ook zegt of wat ze ook doet, hoe hard ze ook haar best doet om het af te
+      wuiven. '
     Duration: 11
   - Sub: "En als mama niet wil luisteren, ga ik gewoon \xE9\xE9n voor \xE9\xE9n jullie
-      allemaal af, ga ik gewoon jullie af, want ik wil jullie duidelijk geven, ik
-      wil jullie rust geven."
+      allemaal af, ga ik gewoon jullie af, want ik wil jullie duidelijk geven, en
+      ik wil jullie rust geven."
     Duration: 8
   - Sub: Ik wil niet een veroorzaker zijn voor verwarring, ik wil niet een veroorzaker
       zijn voor meer pijn en verdriet.
