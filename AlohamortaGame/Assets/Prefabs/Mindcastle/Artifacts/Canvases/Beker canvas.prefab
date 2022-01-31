@@ -710,8 +710,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44.9, y: -232.8}
-  m_SizeDelta: {x: 582.2937, y: 201.0734}
+  m_AnchoredPosition: {x: -44.9, y: -230.45}
+  m_SizeDelta: {x: 582.2937, y: 205.77527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3789616568829117818
 CanvasRenderer:
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8941177, g: 0.8941177, b: 0.8941177, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -753,7 +753,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "\u2018Oh mijn god, jullie ook hier?\u2019 roep ik, opeens draaien ze Shakira
+    met \u201CHips Don\u2019t Lie\u201D. \u2018Dames, weten jullie het nog?!\u2019
+    schreeuw ik opgewekt. Ik zie Emma al naar mij opkijken terwijl ik mijn heupen
+    heen en weer schud. \u2018Daar gaat onze professionele danseres weer hoor\u2019
+    schreeuwt Emma tegen Dennis.\r\n\n\u201CPro?!\u201D vraagt Dennis. \u201CJa,
+    het zal je verbazen wat ze allemaal kan wanneer de muziek aangaat\u201D reageert
+    Emma. Het is geen leugen dat ik mij lekker comfortabel voel op de dansvloer.
+    Het is weer een tijd geleden dat ik gedanst heb, en al helemaal zonder mijn dansgenootjes
+    van de danslessen van vroeger.\r"
 --- !u!1 &2355377680044394160
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,8 +796,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.5, y: 248.9}
-  m_SizeDelta: {x: 411.70023, y: 182.26852}
+  m_AnchoredPosition: {x: 33, y: 243.4}
+  m_SizeDelta: {x: 323.6426, y: 159.67471}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3505877701223153726
 CanvasRenderer:
@@ -812,7 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -831,7 +839,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Voor jaren heb ik lessen gehad in streetdance, in een grote groep. Uiteidenlijk
+    mocht ik een solo-routine dansen waar ik ontzettend hard voor gewerkt. En ja,
+    ik had het gewoon geflikt hoor die 1e prijs, hoppa, kom maar naar mama. Ik was
+    zo blij, echt een mijlpaal in mijn jeugd. '
 --- !u!1 &2545314931996525272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,8 +1135,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 392.9, y: 256.9}
-  m_SizeDelta: {x: 443.28436, y: 166.30157}
+  m_AnchoredPosition: {x: 413, y: 223.1}
+  m_SizeDelta: {x: 344.47693, y: 98.605835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1054479149404628177
 CanvasRenderer:
@@ -1148,7 +1159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1167,7 +1178,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "Deze meid danst nog steeds de sterren van de hemel, althans zo voelt het.
+    Emma word er gek van wanneer ik mijn favoriete nummer van Robyn, \u201CDancing
+    On My Own\u201D, op zet."
 --- !u!1 &5222253677382767239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,8 +1215,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.2917, y: 163.9}
-  m_SizeDelta: {x: 273.6371, y: 287.76022}
+  m_AnchoredPosition: {x: 3.2917, y: 165.79}
+  m_SizeDelta: {x: 273.6371, y: 275.0887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4407148184804439625
 CanvasRenderer:
@@ -1226,7 +1239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1245,7 +1258,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "Ik kijk op de klok het is 9 uur \u2018s avonds. Emma is nog bezig en Dennis
+    komt er zo aan. Ok\xE9, ik zie er wel\r\ngoed uit. Heb er zin in, we gaan zo
+    lekker weer eens naar \u2018de Jansbar\u2019 in het centrum.\r\n\nWe lopen gezellig
+    de stad in en horen luide muziek van alle kanten komen. Ik heb een lekker biertje
+    in mijn\r\nhand en begin al lekker heen en weer te zwieren, en dan zie ik ineens
+    Irene en Joanne op de dansvloer."
 --- !u!1 &7014521591182223110
 GameObject:
   m_ObjectHideFlags: 0

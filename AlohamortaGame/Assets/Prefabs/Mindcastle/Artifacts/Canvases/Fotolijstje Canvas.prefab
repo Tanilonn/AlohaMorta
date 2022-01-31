@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63, y: -108.3}
-  m_SizeDelta: {x: 406.22046, y: 285.40625}
+  m_AnchoredPosition: {x: -68.5, y: -119.7}
+  m_SizeDelta: {x: 319.8935, y: 301.8634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3206430105388010994
 CanvasRenderer:
@@ -77,7 +77,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "En dan word er ineens keihard op de rem getrapt. Er lopen gewoon zebra's
+    over de weg. Ik knipper een paar keer knipperen goed met mijn ogen. We zijn niet
+    in de dierentuin nu toch?\r\n\n\u2018OH MAMA, ZEBRA!\u2019 schreeuwde ik blij.\r\n\n\u2018Ja
+    Nora, dat zie je niet zo vaak h\xE8?\u2019 vraagt mama.\r\n\nLangzaam lopen ze
+    een beetje heen en weer. Opeens voel ik een warme adem en hoor ik het gesmak
+    naast mijn oren.\r"
 --- !u!1 &1157724793439961908
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,8 +793,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.4, y: 159.2}
-  m_SizeDelta: {x: 251.88663, y: 299.23886}
+  m_AnchoredPosition: {x: 24.4, y: 166.1}
+  m_SizeDelta: {x: 251.88663, y: 271.4035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2904692223715395766
 CanvasRenderer:
@@ -831,7 +836,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "Ik draai mij om en dan krijst Emma keihard in mijn andere oor. Ik schrik
+    en het grote figuur naast mij ook. Ik heb nog nooit zoiets moois en elegants
+    gezien. \r\n\nIk zie een mooi patroon aan lichte bruine vlekken voorbijgaan.
+    Het is zo groot en lang, een giraffe. De giraffe blijft mij maar aan staren,
+    en kijkt dan ook naar mijn banaan. Deze mooie giraffe heeft honger."
 --- !u!1 &4303802354108287568
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,8 +953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -81.4, y: 190.2}
-  m_SizeDelta: {x: 510.2672, y: 235.12357}
+  m_AnchoredPosition: {x: -42.5, y: 166.5}
+  m_SizeDelta: {x: 432.38257, y: 214.52005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2720665575645609665
 CanvasRenderer:
@@ -987,7 +996,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "We zitten op de achterbak van een open Jeep op een hobbelige weg. Emma
+    zit de hele tijd maar te brommen en te huilen omdat ze terug naar het hotel wil,
+    omdat ze het zo vreselijk vind.\r\n\nErgens midden in de rimboe, tussen de boompjes
+    en in een warmtegolf, zit ik mijn ogen uit te staren. Het is zo prachtig en anders
+    dan het koude, saai, vlakke Nederland. Het voelt lekker warm en de boompjes zijn
+    zo anders.\r"
 --- !u!1 &6358376201810486997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,8 +1216,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34.4, y: -189.6}
-  m_SizeDelta: {x: 232.37341, y: 289.65735}
+  m_AnchoredPosition: {x: -36.6, y: -160.5}
+  m_SizeDelta: {x: 147.87831, y: 321.09662}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1606281152973925465
 CanvasRenderer:
@@ -1245,7 +1259,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: " \u2018Hier meneer Giraffe, een lekkere banaan voor jou!\u2019 zeg ik.
+    De giraffe is zo blij met mijn banaan. \r\n\nSindsdien ben ik geobsedeerd geraakt
+    met giraffen. Ik vind het zo ontzettend gaaf.\r"
 --- !u!1 &7429390700770273111
 GameObject:
   m_ObjectHideFlags: 0
