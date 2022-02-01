@@ -19,7 +19,10 @@ public class SubsBehaviour : MonoBehaviour
     {        
         Player.clip = Clip;
         Play();
-        ContinueButton.gameObject.SetActive(false);
+        if (ContinueButton != null)
+        {
+            ContinueButton.gameObject.SetActive(false);
+        }
     }
     public void Play()
     {
@@ -49,7 +52,10 @@ public class SubsBehaviour : MonoBehaviour
         }
         Subtitle.text = "";
         Player.Stop();
-        ContinueButton.gameObject.SetActive(true);
+        if(ContinueButton != null)
+        {
+            ContinueButton.gameObject.SetActive(true);
+        }
         if (!string.IsNullOrEmpty(Scene))
         {
             SceneManager.LoadScene(Scene);

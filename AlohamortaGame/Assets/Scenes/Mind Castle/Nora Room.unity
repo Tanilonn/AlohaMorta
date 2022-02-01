@@ -321,7 +321,7 @@ MonoBehaviour:
     Duration: 8
   Clip: {fileID: 8300000, guid: b07b1ca1808836d44adab07f92c2a5d2, type: 3}
   Player: {fileID: 1005584881}
-  ContinueButton: {fileID: 1320174852}
+  ContinueButton: {fileID: 0}
   DisableThis: {fileID: 0}
   Scene: End
 --- !u!222 &49760500

@@ -642,7 +642,7 @@ MonoBehaviour:
       stiekeme slaappartijtjes voor twee gehouden werden. '
     Duration: 9
   - Sub: Waar wij papa buiten de deur hielden met een of ander super moeilijk wachtwoord,
-      die wij zelf na een minuut of twee ook alweer waren vergeten, en toch bleef
+      die wij zelf na een minuut of twee ook alweer vergeten waren, en toch bleef
       hij altijd maar doorraden.
     Duration: 11
   - Sub: 'Stiekem snoep naar boven smokkelen, niet zo stiekem dekenforten bouwen
@@ -662,7 +662,7 @@ MonoBehaviour:
     Duration: 5
   Clip: {fileID: 8300000, guid: 37faa69708eebb04f9291f7c3495f454, type: 3}
   Player: {fileID: 908872766}
-  ContinueButton: {fileID: 940480505}
+  ContinueButton: {fileID: 0}
   DisableThis: {fileID: 0}
   Scene: Bedroom
 --- !u!222 &824326705
