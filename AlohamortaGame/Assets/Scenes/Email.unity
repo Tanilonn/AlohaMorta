@@ -1553,7 +1553,8 @@ MonoBehaviour:
     Hidden: 1
   - ID: 0
     Name: ERROR
-    Description: Vind een manier om de tweede deur in de lobby van de CHIP te openen
+    Description: Vind een manier om de tweede deur in de overloop van de CHIP te
+      openen
     Completed: 0
     Hidden: 0
   - ID: 0
